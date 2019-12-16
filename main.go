@@ -46,9 +46,9 @@ func commandPack(args []string) error {
 
 	absdirname, _ := filepath.Abs(*dirname)
 	absfilename, _ := filepath.Abs(*filename)
-	// if strings.HasPrefix(absfilename, absdirname) {
-	// 	return errors.New("Output file cannot be contained in the input directory.")
-	// }
+	if filepath.Dir(absfilename) == absdirname {
+		return errors.New("Cannot output to the directory that is being packed.")
+	}
 
 	var gameId gameId
 
@@ -97,7 +97,8 @@ func commandPack(args []string) error {
 func main() {
 	if len(os.Args) == 1 {
 		fmt.Println("usage: ccmixar <command> [<args>]")
-		fmt.Println(" pack Packs a directory in a mix file.")
+		fmt.Println("  command:")
+		fmt.Println("    pack Packs a directory in a mix file.")
 		return
 	}
 
