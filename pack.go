@@ -107,38 +107,34 @@ func pack(w io.Writer, files []fileInfo, gameId gameId, flags uint32, keySource 
 		fileId = fileIdV2
 	}
 
-	inner := func(w io.Writer) error {
-		if (flags & flagEncrypted) != 0 {
-			if _, err := w.Write(keySource); err != nil {
-				return err
-			}
-
-			blowfishKey := blowfishKeyFromKeySource(keySource)
-			if cipher, err := blowfish.NewCipher(blowfishKey); err != nil {
-				return err
-			} else {
-				e := newEncryptWriter(w, cipher)
-				if err := writeIndex(e, files, fileId); err != nil {
-					return err
-				} else if err := e.Flush(); err != nil {
-					return err
-				}
-			}
-		} else if err := writeIndex(w, files, fileId); err != nil {
+	if (flags & flagEncrypted) != 0 {
+		if _, err := w.Write(keySource); err != nil {
 			return err
 		}
 
-		return writeBody(w, files)
+		blowfishKey := blowfishKeyFromKeySource(keySource)
+		if cipher, err := blowfish.NewCipher(blowfishKey); err != nil {
+			return err
+		} else {
+			e := newEncryptWriter(w, cipher)
+			if err := writeIndex(e, files, fileId); err != nil {
+				return err
+			} else if err := e.Flush(); err != nil {
+				return err
+			}
+		}
+	} else if err := writeIndex(w, files, fileId); err != nil {
+		return err
 	}
 
 	if (flags & flagChecksum) != 0 {
 		h := newHashWriter(w, sha1.New())
-		if err := inner(h); err != nil {
+		if err := writeBody(h, files); err != nil {
 			return err
 		} else if _, err := w.Write(h.Sum(nil)); err != nil {
 			return err
 		}
-	} else if err := inner(w); err != nil {
+	} else if err := writeBody(w, files); err != nil {
 		return err
 	}
 
