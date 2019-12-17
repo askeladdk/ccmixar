@@ -24,8 +24,13 @@ func lmdFile(gameId gameId, files []fileInfo) (fileInfo, error) {
 	}
 
 	size := uint32(52 + 1 + len(lmdFilename))
+	var filesToKeep []fileInfo
+
 	for _, f := range files {
-		size += uint32(1 + len(f.Name()))
+		if _, ok := filenameIsId(f.Name()); !ok {
+			filesToKeep = append(filesToKeep, f)
+			size += uint32(1 + len(f.Name()))
+		}
 	}
 
 	for _, v := range []uint32{size, 0, 0, uint32(gameId), 1 + uint32(len(files))} {
@@ -34,7 +39,7 @@ func lmdFile(gameId gameId, files []fileInfo) (fileInfo, error) {
 		}
 	}
 
-	for _, f := range files {
+	for _, f := range filesToKeep {
 		if _, err := fmt.Fprintf(&b, "%s\x00", f.Name()); err != nil {
 			return nil, err
 		}

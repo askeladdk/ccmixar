@@ -9,11 +9,21 @@ import (
 
 type fileId func(name string) uint32
 
-func fileIdV1(name string) uint32 {
+func filenameIsId(name string) (uint32, bool) {
 	if len(name) == 8 {
-		if decoded, err := hex.DecodeString(name); err == nil {
-			return binary.BigEndian.Uint32(decoded)
+		if decoded, err := hex.DecodeString(name); err != nil {
+			return 0, false
+		} else {
+			return binary.BigEndian.Uint32(decoded), true
 		}
+	} else {
+		return 0, false
+	}
+}
+
+func fileIdV1(name string) uint32 {
+	if id, ok := filenameIsId(name); ok {
+		return id
 	}
 
 	name = strings.ToUpper(name)
@@ -68,10 +78,8 @@ var adlerTable = &crc32.Table{
 }
 
 func fileIdV2(name string) uint32 {
-	if len(name) == 8 {
-		if decoded, err := hex.DecodeString(name); err == nil {
-			return binary.BigEndian.Uint32(decoded)
-		}
+	if id, ok := filenameIsId(name); ok {
+		return id
 	}
 
 	name = strings.ToUpper(name)
