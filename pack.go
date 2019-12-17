@@ -24,7 +24,7 @@ func (this *filesAndIds) Len() int {
 }
 
 func (this *filesAndIds) Less(i, j int) bool {
-	return this.ids[i] < this.ids[j]
+	return int32(this.ids[i]) < int32(this.ids[j])
 }
 
 func (this *filesAndIds) Swap(i, j int) {
