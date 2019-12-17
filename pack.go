@@ -135,8 +135,9 @@ func pack(w io.Writer, files []fileInfo, gameId gameId, flags uint32, keySource 
 	}
 
 	if (flags & flagChecksum) != 0 {
-		h := newHashWriter(w, sha1.New())
-		if err := writeBody(h, files); err != nil {
+		h := sha1.New()
+		mw := io.MultiWriter(w, h)
+		if err := writeBody(mw, files); err != nil {
 			return err
 		} else if _, err := w.Write(h.Sum(nil)); err != nil {
 			return err
