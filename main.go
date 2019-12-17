@@ -94,11 +94,50 @@ func commandPack(args []string) error {
 	return nil
 }
 
+func commandInfo(args []string) error {
+	var (
+		cmd      = flag.NewFlagSet("info", flag.ExitOnError)
+		filename = cmd.String("mix", "", "Path to .mix file.")
+	)
+
+	if err := cmd.Parse(args); err != nil {
+		return err
+	} else if len(*filename) == 0 {
+		return errors.New("No mix file specified.")
+	}
+
+	if f, err := os.Open(*filename); err != nil {
+		return err
+	} else if mix, err := readMixFile(f); err != nil {
+		return err
+	} else {
+		var flags []string
+		if (mix.flags & flagChecksum) != 0 {
+			flags = append(flags, "checksum")
+		}
+		if (mix.flags & flagEncrypted) != 0 {
+			flags = append(flags, "encrypted")
+		}
+
+		fmt.Printf("size: %d bytes\n", mix.size)
+		if len(flags) != 0 {
+			fmt.Printf("flags: %s\n", strings.Join(flags, ", "))
+		}
+		fmt.Printf("file     offset\n")
+		for _, entry := range mix.files {
+			fmt.Printf("%08X %08X % 10d bytes\n", entry.id, entry.offset, entry.size)
+		}
+	}
+
+	return nil
+}
+
 func main() {
 	if len(os.Args) == 1 {
 		fmt.Println("usage: ccmixar <command> [<args>]")
 		fmt.Println("  command:")
 		fmt.Println("    pack Packs a directory in a mix file.")
+		fmt.Println("    info Lists mix file contents.")
 		return
 	}
 
@@ -106,6 +145,8 @@ func main() {
 	switch os.Args[1] {
 	case "pack":
 		cmderr = commandPack(os.Args[2:])
+	case "info":
+		cmderr = commandInfo(os.Args[2:])
 	default:
 		fmt.Printf("%q is not valid command.\n", os.Args[1])
 		os.Exit(2)
