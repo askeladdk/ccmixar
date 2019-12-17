@@ -123,7 +123,7 @@ func pack(w io.Writer, files []fileInfo, gameId gameId, flags uint32, keySource 
 		if cipher, err := blowfish.NewCipher(blowfishKey); err != nil {
 			return err
 		} else {
-			e := newEncryptWriter(w, cipher)
+			e := newEcbWriter(w, cipher)
 			if err := writeIndex(e, files, fileId); err != nil {
 				return err
 			} else if err := e.Flush(); err != nil {
