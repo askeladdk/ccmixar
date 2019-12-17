@@ -3,6 +3,7 @@ package main
 import (
 	"crypto/sha1"
 	"errors"
+	"fmt"
 	"io"
 	"sort"
 
@@ -55,6 +56,12 @@ func writeIndex(w io.Writer, files []fileInfo, fileId fileId) error {
 		files: files,
 		ids:   ids,
 	})
+
+	for i := 1; i < len(ids); i++ {
+		if ids[i-1] == ids[i] {
+			return errors.New(fmt.Sprintf("ID collision %x on %s and %s", ids[i], files[i].Name(), files[i-1].Name()))
+		}
+	}
 
 	offset := uint32(0)
 
