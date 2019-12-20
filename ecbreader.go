@@ -1,38 +1,36 @@
 package main
 
 import (
+	"bytes"
 	"crypto/cipher"
 	"io"
 )
 
 type ecbReader struct {
-	r io.Reader
-	b cipher.Block
-	t []byte
+	reader io.Reader
+	block  cipher.Block
+	buffer bytes.Buffer
 }
 
 func newECBReader(r io.Reader, b cipher.Block) *ecbReader {
 	return &ecbReader{
-		r: r,
-		b: b,
-		t: nil,
+		reader: r,
+		block:  b,
 	}
 }
 
 func (this *ecbReader) Read(p []byte) (int, error) {
-	if len(this.t) < len(p) {
-		blksz := this.b.BlockSize()
+	if this.buffer.Len() < len(p) {
+		blksz := this.block.BlockSize()
 		n := (len(p) + blksz - 1) & ^(blksz - 1)
 		t := make([]byte, n)
-		if _, err := this.r.Read(t); err != nil {
+		if _, err := this.reader.Read(t); err != nil {
 			return 0, err
 		} else {
-			this.b.Decrypt(t, t)
-			this.t = append(this.t, t...)
+			this.block.Decrypt(t, t)
+			this.buffer.Write(t)
 		}
 	}
 
-	copy(p, this.t[:len(p)])
-	this.t = this.t[len(p):]
-	return len(p), nil
+	return this.buffer.Read(p)
 }

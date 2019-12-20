@@ -1,52 +1,47 @@
 package main
 
 import (
+	"bytes"
 	"crypto/cipher"
 	"io"
 )
 
 type ecbWriter struct {
-	w io.Writer
-	b cipher.Block
-	t []byte
+	writer io.Writer
+	block  cipher.Block
+	buffer bytes.Buffer
 }
 
 func newEcbWriter(w io.Writer, b cipher.Block) *ecbWriter {
 	return &ecbWriter{
-		w: w,
-		b: b,
-		t: nil,
+		writer: w,
+		block:  b,
 	}
 }
 
 func (this *ecbWriter) Write(p []byte) (int, error) {
-	t := append(this.t, p...)
-	blksz := this.b.BlockSize()
-	remainder := len(t) % blksz
+	blksz := this.block.BlockSize()
 
-	for i := 0; i < len(t)-remainder; i += blksz {
-		blk := t[i : i+blksz]
-		this.b.Encrypt(blk, blk)
-		if _, err := this.w.Write(blk); err != nil {
+	this.buffer.Write(p)
+
+	for this.buffer.Len() >= blksz {
+		blk := make([]byte, blksz)
+		this.buffer.Read(blk)
+		this.block.Encrypt(blk, blk)
+		if _, err := this.writer.Write(blk); err != nil {
 			return 0, err
 		}
-	}
-
-	if remainder != 0 {
-		this.t = t[len(t)-remainder:]
-	} else {
-		this.t = nil
 	}
 
 	return len(p), nil
 }
 
 func (this *ecbWriter) Flush() error {
-	if len(this.t) != 0 {
-		blk := make([]byte, this.b.BlockSize())
-		copy(blk, this.t)
-		this.b.Encrypt(blk, blk)
-		if _, err := this.w.Write(blk); err != nil {
+	if this.buffer.Len() != 0 {
+		blk := make([]byte, this.block.BlockSize())
+		this.buffer.Read(blk)
+		this.block.Encrypt(blk, blk)
+		if _, err := this.writer.Write(blk); err != nil {
 			return err
 		}
 	}
