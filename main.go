@@ -97,6 +97,60 @@ func commandPack(args []string) error {
 	return nil
 }
 
+func commandUnpack(args []string) error {
+	var (
+		cmd      = flag.NewFlagSet("unpack", flag.ExitOnError)
+		filename = cmd.String("mix", "", "Path to .mix file.")
+		dirname  = cmd.String("dir", "", "Output directory.")
+		game     = cmd.String("game", "", "One of cc1, cc2, ra1, ra2.")
+	)
+
+	if err := cmd.Parse(args); err != nil {
+		return err
+	} else if *dirname == "" {
+		return errors.New("No output directory specified.")
+	} else if *filename == "" {
+		return errors.New("No mix file specified.")
+	}
+
+	absdirname, _ := filepath.Abs(*dirname)
+	absfilename, _ := filepath.Abs(*filename)
+	if filepath.Dir(absfilename) == absdirname {
+		return errors.New("Cannot output to the same directory where the input mix file is located.")
+	} else if err := os.MkdirAll(absdirname, os.ModePerm); err != nil {
+		return err
+	} else if gameId, err := stringToGameId(*game); err != nil {
+		return err
+	} else if f, err := os.Open(*filename); err != nil {
+		return err
+	} else if stat, err := f.Stat(); err != nil {
+		return err
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size())); err != nil {
+		return err
+	} else {
+		defer f.Close()
+		mix.ReadLmd(gameId)
+
+		for i, entry := range mix.files {
+			infile := mix.OpenFile(i)
+			fname := entry.name
+			if fname == "" {
+				fname = fmt.Sprintf("%08X", entry.id)
+			}
+			fname = filepath.Join(absdirname, fname)
+			if outfile, err := os.OpenFile(fname, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644); err != nil {
+				return err
+			} else if _, err := io.Copy(outfile, infile); err != nil {
+				return err
+			} else if err := outfile.Close(); err != nil {
+				return err
+			}
+		}
+
+		return nil
+	}
+}
+
 func commandInfo(args []string) error {
 	var (
 		cmd      = flag.NewFlagSet("info", flag.ExitOnError)
@@ -139,8 +193,9 @@ func main() {
 	if len(os.Args) == 1 {
 		fmt.Println("usage: ccmixar <command> [<args>]")
 		fmt.Println("  command:")
-		fmt.Println("    pack Packs a directory in a mix file.")
-		fmt.Println("    info Lists mix file contents.")
+		fmt.Println("    info   Lists mix file contents.")
+		fmt.Println("    pack   Packs a directory in a mix file.")
+		fmt.Println("    unpack Unpacks a mix file to a directory.")
 		return
 	}
 
@@ -150,6 +205,8 @@ func main() {
 		cmderr = commandPack(os.Args[2:])
 	case "info":
 		cmderr = commandInfo(os.Args[2:])
+	case "unpack":
+		cmderr = commandUnpack(os.Args[2:])
 	default:
 		fmt.Printf("%q is not valid command.\n", os.Args[1])
 		os.Exit(2)
