@@ -107,12 +107,7 @@ func pack(w io.Writer, files []fileInfo, gameId gameId, flags uint32, keySource 
 		return errors.New("Game cc1 does not support flags.")
 	}
 
-	var fileId fileId
-	if gameId <= gameId_RA1 {
-		fileId = fileIdV1
-	} else {
-		fileId = fileIdV2
-	}
+	fileId := getFileId(gameId)
 
 	if (flags & flagEncrypted) != 0 {
 		if _, err := w.Write(keySource); err != nil {

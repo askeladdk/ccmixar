@@ -71,7 +71,7 @@ func listFilesToPack(dirname string, database bool, gameId gameId) ([]fileInfo, 
 	if files, err := readDirectory(dirname); err != nil {
 		return nil, err
 	} else if database {
-		if lmb, err := lmdFile(gameId, files); err != nil {
+		if lmb, err := lmdWrite(gameId, files); err != nil {
 			return nil, err
 		} else {
 			return append(files, lmb), nil

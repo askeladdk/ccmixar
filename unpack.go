@@ -10,17 +10,30 @@ type mixFileEntry struct {
 	id     uint32
 	offset uint32
 	size   uint32
+	name   string
+}
+
+type mixFileEntries []mixFileEntry
+
+func (this mixFileEntries) indexById(id uint32) int {
+	for i := 0; i < len(this); i++ {
+		if this[i].id == id {
+			return i
+		}
+	}
+	return -1
 }
 
 type mixFile struct {
-	checksum []byte
-	files    []mixFileEntry
-	flags    uint32
-	size     uint32
+	files  mixFileEntries
+	flags  uint32
+	size   uint32
+	offset uint32
+	reader *io.SectionReader
 }
 
-func readFileEntries(r io.Reader, count uint16) ([]mixFileEntry, error) {
-	var entries []mixFileEntry
+func readFileEntries(r io.Reader, count uint16) (mixFileEntries, error) {
+	var entries mixFileEntries
 	for i := uint16(0); i < count; i++ {
 		if id, err := readUint32(r); err != nil {
 			return nil, err
@@ -49,7 +62,7 @@ func readIndex(r io.Reader, count uint16) (uint32, []mixFileEntry, error) {
 	}
 }
 
-func readMixFile(r io.ReadSeeker) (*mixFile, error) {
+func unpackMixFile(r *io.SectionReader) (*mixFile, error) {
 	if count, err := readUint16(r); err != nil {
 		return nil, err
 	} else if count != 0 {
@@ -57,18 +70,17 @@ func readMixFile(r io.ReadSeeker) (*mixFile, error) {
 			return nil, err
 		} else {
 			return &mixFile{
-				flags: 0,
-				size:  size,
-				files: files,
+				files:  files,
+				flags:  0,
+				size:   size,
+				offset: 6 + 12*uint32(count),
+				reader: r,
 			}, nil
 		}
 	} else if flags16, err := readUint16(r); err != nil {
 		return nil, err
 	} else {
 		flags := uint32(flags16) << 16
-		var size uint32
-		var files []mixFileEntry
-		var checksum []byte
 
 		if (flags & flagEncrypted) != 0 {
 			keySource := [80]byte{}
@@ -82,35 +94,52 @@ func readMixFile(r io.ReadSeeker) (*mixFile, error) {
 					ecb := newECBReader(r, cipher)
 					if count, err := readUint16(ecb); err != nil {
 						return nil, err
-					} else if size1, files1, err := readIndex(ecb, count); err != nil {
+					} else if size, files, err := readIndex(ecb, count); err != nil {
 						return nil, err
 					} else {
-						size = size1
-						files = files1
+						return &mixFile{
+							files:  files,
+							flags:  flags,
+							size:   size,
+							offset: 84 + ((6 + 12*uint32(count) + 7) &^ 7),
+							reader: r,
+						}, nil
 					}
 				}
 			}
-		} else if size1, files1, err := readIndex(r, count); err != nil {
+		} else if count, err := readUint16(r); err != nil {
+			return nil, err
+		} else if size, files, err := readIndex(r, count); err != nil {
 			return nil, err
 		} else {
-			size = size1
-			files = files1
+			return &mixFile{
+				files:  files,
+				flags:  flags,
+				size:   size,
+				offset: 10 + 12*uint32(count),
+				reader: r,
+			}, nil
 		}
+	}
+}
 
-		if (flags & flagChecksum) != 0 {
-			checksum = make([]byte, 20)
-			if _, err := r.Seek(-20, io.SeekEnd); err != nil {
-				return nil, err
-			} else if _, err := r.Read(checksum); err != nil {
-				return nil, err
+func (this *mixFile) OpenFile(i int) *io.SectionReader {
+	info := this.files[i]
+	return io.NewSectionReader(this.reader, int64(this.offset+info.offset), int64(info.size))
+}
+
+func (this *mixFile) ReadLmd(game gameId) error {
+	lmdId := getLmdFileId(game)
+	if fileIndex := this.files.indexById(lmdId); fileIndex == -1 {
+		return nil
+	} else if mapper, err := lmdRead(this.OpenFile(fileIndex)); err != nil {
+		return err
+	} else {
+		for i := 0; i < len(this.files); i++ {
+			if name, ok := mapper[this.files[i].id]; ok {
+				this.files[i].name = name
 			}
 		}
-
-		return &mixFile{
-			checksum: checksum,
-			flags:    flags,
-			files:    files,
-			size:     size,
-		}, nil
+		return nil
 	}
 }

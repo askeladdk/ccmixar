@@ -101,3 +101,11 @@ func fileIdV2(name string) uint32 {
 		return crc32.Update(0, adlerTable, []byte(name))
 	}
 }
+
+func getFileId(gameId gameId) fileId {
+	if gameId <= gameId_RA1 {
+		return fileIdV1
+	} else {
+		return fileIdV2
+	}
+}

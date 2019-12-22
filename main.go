@@ -5,6 +5,7 @@ import (
 	"errors"
 	"flag"
 	"fmt"
+	"io"
 	"os"
 	"path/filepath"
 	"strings"
@@ -21,6 +22,23 @@ var defaultKeySource = []byte{
 	0x52, 0x3a, 0x80, 0xf8, 0xbe, 0x45, 0x40, 0x6a,
 	0x66, 0xb4, 0xc5, 0xf6, 0xd0, 0x12, 0xe0, 0x43,
 	0x44, 0x65, 0xc6, 0xe3, 0x9e, 0xf9, 0x43, 0x35,
+}
+
+func stringToGameId(s string) (gameId, error) {
+	switch strings.ToLower(s) {
+	case "cc1":
+		return gameId_CC1, nil
+	case "cc2":
+		return gameId_CC2, nil
+	case "ra1":
+		return gameId_RA1, nil
+	case "ra2":
+		return gameId_RA2, nil
+	case "":
+		return 0, errors.New("No game specified.")
+	default:
+		return 0, errors.New(fmt.Sprintf("Invalid game: %s.", s))
+	}
 }
 
 func commandPack(args []string) error {
@@ -50,23 +68,6 @@ func commandPack(args []string) error {
 		return errors.New("Cannot output to the directory that is being packed.")
 	}
 
-	var gameId gameId
-
-	switch strings.ToLower(*game) {
-	case "cc1":
-		gameId = gameId_CC1
-	case "cc2":
-		gameId = gameId_CC2
-	case "ra1":
-		gameId = gameId_RA1
-	case "ra2":
-		gameId = gameId_RA2
-	case "":
-		return errors.New("No game specified.")
-	default:
-		return errors.New(fmt.Sprintf("Invalid game: %s.", *game))
-	}
-
 	flags := uint32(0)
 	if *checksum {
 		flags |= flagChecksum
@@ -75,7 +76,9 @@ func commandPack(args []string) error {
 		flags |= flagEncrypted
 	}
 
-	if f, err := os.OpenFile(absfilename, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644); err != nil {
+	if gameId, err := stringToGameId(*game); err != nil {
+		return err
+	} else if f, err := os.OpenFile(absfilename, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644); err != nil {
 		return err
 	} else {
 		defer f.Close()
@@ -98,6 +101,7 @@ func commandInfo(args []string) error {
 	var (
 		cmd      = flag.NewFlagSet("info", flag.ExitOnError)
 		filename = cmd.String("mix", "", "Path to .mix file.")
+		game     = cmd.String("game", "", "One of cc1, cc2, ra1, ra2.")
 	)
 
 	if err := cmd.Parse(args); err != nil {
@@ -106,30 +110,29 @@ func commandInfo(args []string) error {
 		return errors.New("No mix file specified.")
 	}
 
-	if f, err := os.Open(*filename); err != nil {
+	if gameId, err := stringToGameId(*game); err != nil {
 		return err
-	} else if mix, err := readMixFile(f); err != nil {
+	} else if f, err := os.Open(*filename); err != nil {
+		return err
+	} else if stat, err := f.Stat(); err != nil {
+		return err
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size())); err != nil {
 		return err
 	} else {
-		var flags []string
-		if (mix.flags & flagChecksum) != 0 {
-			flags = append(flags, "checksum")
-		}
-		if (mix.flags & flagEncrypted) != 0 {
-			flags = append(flags, "encrypted")
+		defer f.Close()
+		mix.ReadLmd(gameId)
+
+		fmt.Printf("checksum:  %t\n", (mix.flags&flagChecksum) != 0)
+		fmt.Printf("encrypted: %t\n", (mix.flags&flagEncrypted) != 0)
+		fmt.Printf("files:     %d\n", len(mix.files))
+		fmt.Printf("size:      %d bytes\n", mix.size)
+
+		for i, entry := range mix.files {
+			fmt.Printf("%04d - %08X % 10d %s\n", i, entry.id, entry.size, entry.name)
 		}
 
-		fmt.Printf("size: %d bytes\n", mix.size)
-		if len(flags) != 0 {
-			fmt.Printf("flags: %s\n", strings.Join(flags, ", "))
-		}
-		fmt.Printf("file     offset\n")
-		for _, entry := range mix.files {
-			fmt.Printf("%08X %08X % 10d bytes\n", entry.id, entry.offset, entry.size)
-		}
+		return nil
 	}
-
-	return nil
 }
 
 func main() {

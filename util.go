@@ -1,9 +1,22 @@
 package main
 
 import (
+	"bytes"
 	"encoding/binary"
 	"io"
 )
+
+func scanZStrings(data []byte, atEOF bool) (int, []byte, error) {
+	if atEOF && len(data) == 0 {
+		return 0, nil, nil
+	} else if i := bytes.IndexByte(data, 0); i >= 0 {
+		return i + 1, data[0:i], nil
+	} else if atEOF {
+		return len(data), data, nil
+	} else {
+		return 0, nil, nil
+	}
+}
 
 func readUint16(r io.Reader) (uint16, error) {
 	b := [2]byte{}
