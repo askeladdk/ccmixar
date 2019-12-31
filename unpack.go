@@ -30,6 +30,8 @@ type mixFile struct {
 	size   uint32
 	offset uint32
 	reader *io.SectionReader
+	game   gameId
+	keysrc []byte
 }
 
 func readFileEntries(r io.Reader, count uint16) (mixFileEntries, error) {
@@ -62,19 +64,21 @@ func readIndex(r io.Reader, count uint16) (uint32, []mixFileEntry, error) {
 	}
 }
 
-func unpackMixFile(r *io.SectionReader) (*mixFile, error) {
+func unpackMixFile(r *io.SectionReader, game gameId) (*mixFile, error) {
 	if count, err := readUint16(r); err != nil {
 		return nil, err
 	} else if count != 0 {
-		if size, files, err := readIndex(r, count); err != nil {
+		if _, files, err := readIndex(r, count); err != nil {
 			return nil, err
 		} else {
+			offset := 6 + 12*uint32(count)
 			return &mixFile{
 				files:  files,
 				flags:  0,
-				size:   size,
-				offset: 6 + 12*uint32(count),
+				size:   uint32(r.Size()) - offset,
+				offset: offset,
 				reader: r,
+				game:   gameId_CC1,
 			}, nil
 		}
 	} else if flags16, err := readUint16(r); err != nil {
@@ -94,30 +98,35 @@ func unpackMixFile(r *io.SectionReader) (*mixFile, error) {
 					ecb := newECBReader(r, cipher)
 					if count, err := readUint16(ecb); err != nil {
 						return nil, err
-					} else if size, files, err := readIndex(ecb, count); err != nil {
+					} else if _, files, err := readIndex(ecb, count); err != nil {
 						return nil, err
 					} else {
+						offset := 84 + ((6 + 12*uint32(count) + 7) &^ 7)
 						return &mixFile{
 							files:  files,
 							flags:  flags,
-							size:   size,
-							offset: 84 + ((6 + 12*uint32(count) + 7) &^ 7),
+							size:   uint32(r.Size()) - offset,
+							offset: offset,
 							reader: r,
+							game:   game,
+							keysrc: keySource[:],
 						}, nil
 					}
 				}
 			}
 		} else if count, err := readUint16(r); err != nil {
 			return nil, err
-		} else if size, files, err := readIndex(r, count); err != nil {
+		} else if _, files, err := readIndex(r, count); err != nil {
 			return nil, err
 		} else {
+			offset := 10 + 12*uint32(count)
 			return &mixFile{
 				files:  files,
 				flags:  flags,
-				size:   size,
-				offset: 10 + 12*uint32(count),
+				size:   uint32(r.Size()) - offset,
+				offset: offset,
 				reader: r,
+				game:   game,
 			}, nil
 		}
 	}
@@ -128,8 +137,8 @@ func (this *mixFile) OpenFile(i int) *io.SectionReader {
 	return io.NewSectionReader(this.reader, int64(this.offset+info.offset), int64(info.size))
 }
 
-func (this *mixFile) ReadLmd(game gameId) error {
-	lmdId := getLmdFileId(game)
+func (this *mixFile) ReadLmd() error {
+	lmdId := getLmdFileId(this.game)
 	if fileIndex := this.files.indexById(lmdId); fileIndex == -1 {
 		return nil
 	} else if mapper, err := lmdRead(this.OpenFile(fileIndex)); err != nil {

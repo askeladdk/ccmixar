@@ -125,11 +125,12 @@ func commandUnpack(args []string) error {
 		return err
 	} else if stat, err := f.Stat(); err != nil {
 		return err
-	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size())); err != nil {
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameId); err != nil {
 		return err
 	} else {
 		defer f.Close()
-		mix.ReadLmd(gameId)
+		mix.RecoverLmd()
+		mix.ReadLmd()
 
 		for i, entry := range mix.files {
 			infile := mix.OpenFile(i)
@@ -170,11 +171,12 @@ func commandInfo(args []string) error {
 		return err
 	} else if stat, err := f.Stat(); err != nil {
 		return err
-	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size())); err != nil {
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameId); err != nil {
 		return err
 	} else {
 		defer f.Close()
-		mix.ReadLmd(gameId)
+		mix.RecoverLmd()
+		mix.ReadLmd()
 
 		fmt.Printf("checksum:  %t\n", (mix.flags&flagChecksum) != 0)
 		fmt.Printf("encrypted: %t\n", (mix.flags&flagEncrypted) != 0)
@@ -182,7 +184,40 @@ func commandInfo(args []string) error {
 		fmt.Printf("size:      %d bytes\n", mix.size)
 
 		for i, entry := range mix.files {
-			fmt.Printf("%04d - %08X % 10d %s\n", i, entry.id, entry.size, entry.name)
+			fmt.Printf("%04d - %08X %08X % 12d %s\n", i, entry.id, entry.offset, entry.size, entry.name)
+		}
+
+		return nil
+	}
+}
+
+func commandRepair(args []string) error {
+	var (
+		cmd      = flag.NewFlagSet("repair", flag.ExitOnError)
+		filename = cmd.String("mix", "", "Path to .mix file.")
+		game     = cmd.String("game", "", "One of cc1, cc2, ra1, ra2.")
+	)
+
+	if err := cmd.Parse(args); err != nil {
+		return err
+	} else if len(*filename) == 0 {
+		return errors.New("No mix file specified.")
+	}
+
+	if gameId, err := stringToGameId(*game); err != nil {
+		return err
+	} else if f, err := os.OpenFile(*filename, os.O_RDWR, 0); err != nil {
+		return err
+	} else if stat, err := f.Stat(); err != nil {
+		return err
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameId); err != nil {
+		return err
+	} else {
+		defer f.Close()
+		mix.RecoverLmd()
+		f.Seek(0, io.SeekStart)
+		if err := mix.RewriteHeader(f); err != nil {
+			return err
 		}
 
 		return nil
@@ -195,6 +230,7 @@ func main() {
 		fmt.Println("  command:")
 		fmt.Println("    info   Lists mix file contents.")
 		fmt.Println("    pack   Packs a directory in a mix file.")
+		fmt.Println("    repair Repairs a mangled mix file.")
 		fmt.Println("    unpack Unpacks a mix file to a directory.")
 		return
 	}
@@ -207,6 +243,8 @@ func main() {
 		cmderr = commandInfo(os.Args[2:])
 	case "unpack":
 		cmderr = commandUnpack(os.Args[2:])
+	case "repair":
+		cmderr = commandRepair(os.Args[2:])
 	default:
 		fmt.Printf("%q is not valid command.\n", os.Args[1])
 		os.Exit(2)
