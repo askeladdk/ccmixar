@@ -20,20 +20,20 @@ type filesAndIds struct {
 	ids   []uint32
 }
 
-func (this *filesAndIds) Len() int {
-	return len(this.ids)
+func (fids *filesAndIds) Len() int {
+	return len(fids.ids)
 }
 
-func (this *filesAndIds) Less(i, j int) bool {
-	return int32(this.ids[i]) < int32(this.ids[j])
+func (fids *filesAndIds) Less(i, j int) bool {
+	return int32(fids.ids[i]) < int32(fids.ids[j])
 }
 
-func (this *filesAndIds) Swap(i, j int) {
-	this.files[i], this.files[j] = this.files[j], this.files[i]
-	this.ids[i], this.ids[j] = this.ids[j], this.ids[i]
+func (fids *filesAndIds) Swap(i, j int) {
+	fids.files[i], fids.files[j] = fids.files[j], fids.files[i]
+	fids.ids[i], fids.ids[j] = fids.ids[j], fids.ids[i]
 }
 
-func writeIndex(w io.Writer, files []fileInfo, fileId fileId) error {
+func writeIndex(w io.Writer, files []fileInfo, fileID fileID) error {
 	count := uint16(len(files))
 	size := uint32(0)
 
@@ -49,7 +49,7 @@ func writeIndex(w io.Writer, files []fileInfo, fileId fileId) error {
 
 	var ids []uint32
 	for _, fi := range files {
-		ids = append(ids, fileId(fi.Name()))
+		ids = append(ids, fileID(fi.Name()))
 	}
 
 	sort.Sort(&filesAndIds{
@@ -59,7 +59,7 @@ func writeIndex(w io.Writer, files []fileInfo, fileId fileId) error {
 
 	for i := 1; i < len(ids); i++ {
 		if ids[i-1] == ids[i] {
-			return errors.New(fmt.Sprintf("ID collision %x on %s and %s", ids[i], files[i].Name(), files[i-1].Name()))
+			return fmt.Errorf("ID collision %x on %s and %s", ids[i], files[i].Name(), files[i-1].Name())
 		}
 	}
 
@@ -85,29 +85,28 @@ func writeIndex(w io.Writer, files []fileInfo, fileId fileId) error {
 
 func writeBody(w io.Writer, files []fileInfo) error {
 	for _, fi := range files {
-		if f, err := fi.Open(); err != nil {
+		f, err := fi.Open()
+		if err != nil {
 			return err
-		} else {
-			defer f.Close()
-			if _, err := io.Copy(w, f); err != nil {
-				return err
-			}
+		}
+		defer f.Close()
+		if _, err := io.Copy(w, f); err != nil {
+			return err
 		}
 	}
-
 	return nil
 }
 
-func pack(w io.Writer, files []fileInfo, gameId gameId, flags uint32, keySource []byte) error {
-	if gameId != gameId_CC1 {
+func pack(w io.Writer, files []fileInfo, game gameID, flags uint32, keySource []byte) error {
+	if game != gameCC1 {
 		if _, err := writeUint32(w, flags); err != nil {
 			return err
 		}
 	} else if flags != 0 {
-		return errors.New("Game cc1 does not support flags.")
+		return errors.New("game cc1 does not support flags")
 	}
 
-	fileId := getFileId(gameId)
+	fileID := getFileID(game)
 
 	if (flags & flagEncrypted) != 0 {
 		if _, err := w.Write(keySource); err != nil {
@@ -115,17 +114,17 @@ func pack(w io.Writer, files []fileInfo, gameId gameId, flags uint32, keySource 
 		}
 
 		blowfishKey := blowfishKeyFromKeySource(keySource)
-		if cipher, err := blowfish.NewCipher(blowfishKey); err != nil {
+		cipher, err := blowfish.NewCipher(blowfishKey)
+		if err != nil {
 			return err
-		} else {
-			e := newEcbWriter(w, cipher)
-			if err := writeIndex(e, files, fileId); err != nil {
-				return err
-			} else if err := e.Flush(); err != nil {
-				return err
-			}
 		}
-	} else if err := writeIndex(w, files, fileId); err != nil {
+		e := newEcbWriter(w, cipher)
+		if err := writeIndex(e, files, fileID); err != nil {
+			return err
+		} else if err := e.Flush(); err != nil {
+			return err
+		}
+	} else if err := writeIndex(w, files, fileID); err != nil {
 		return err
 	}
 

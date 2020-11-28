@@ -5,19 +5,19 @@ import (
 	"testing"
 )
 
-func Test_Pack_CC1(t *testing.T) {
+func TestPackCC1(t *testing.T) {
 	if f, err := os.OpenFile("./test/cc1.mix", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644); err != nil {
 		t.Fatal(err)
-	} else if files, err := listFilesToPack("./test/files", true, gameId_CC1); err != nil {
+	} else if files, err := listFilesToPack("./test/files", true, gameCC1); err != nil {
 		t.Fatal(err)
-	} else if err := pack(f, files, gameId_CC1, 0, nil); err != nil {
+	} else if err := pack(f, files, gameCC1, 0, nil); err != nil {
 		t.Fatal(err)
 	} else if err := f.Close(); err != nil {
 		t.Fatal(err)
 	}
 }
 
-func Test_Pack_RA1(t *testing.T) {
+func TestPackRA1(t *testing.T) {
 	keySource := []byte{
 		0xca, 0xd0, 0xb0, 0x1b, 0xfe, 0x3f, 0x3f, 0xb6,
 		0xca, 0xc0, 0xbd, 0x8f, 0x40, 0xf0, 0xee, 0x85,
@@ -33,9 +33,9 @@ func Test_Pack_RA1(t *testing.T) {
 
 	if f, err := os.OpenFile("./test/ra1.mix", os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644); err != nil {
 		t.Fatal(err)
-	} else if files, err := listFilesToPack("./test/files", true, gameId_RA1); err != nil {
+	} else if files, err := listFilesToPack("./test/files", true, gameRA1); err != nil {
 		t.Fatal(err)
-	} else if err := pack(f, files, gameId_RA1, flagChecksum|flagEncrypted, keySource); err != nil {
+	} else if err := pack(f, files, gameRA1, flagChecksum|flagEncrypted, keySource); err != nil {
 		t.Fatal(err)
 	} else if err := f.Close(); err != nil {
 		t.Fatal(err)

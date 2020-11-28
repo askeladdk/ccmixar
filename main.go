@@ -24,20 +24,20 @@ var defaultKeySource = []byte{
 	0x44, 0x65, 0xc6, 0xe3, 0x9e, 0xf9, 0x43, 0x35,
 }
 
-func stringToGameId(s string) (gameId, error) {
+func stringToGameID(s string) (gameID, error) {
 	switch strings.ToLower(s) {
 	case "cc1":
-		return gameId_CC1, nil
+		return gameCC1, nil
 	case "cc2":
-		return gameId_CC2, nil
+		return gameCC2, nil
 	case "ra1":
-		return gameId_RA1, nil
+		return gameRA1, nil
 	case "ra2":
-		return gameId_RA2, nil
+		return gameRA2, nil
 	case "":
-		return 0, errors.New("No game specified.")
+		return 0, errors.New("no game specified")
 	default:
-		return 0, errors.New(fmt.Sprintf("Invalid game: %s.", s))
+		return 0, fmt.Errorf("invalid game: %s", s)
 	}
 }
 
@@ -57,15 +57,15 @@ func commandPack(args []string) error {
 	}
 
 	if *dirname == "" {
-		return errors.New("No directory specified.")
+		return errors.New("no directory specified")
 	} else if *filename == "" {
-		return errors.New("No output file specified.")
+		return errors.New("no output file specified")
 	}
 
 	absdirname, _ := filepath.Abs(*dirname)
 	absfilename, _ := filepath.Abs(*filename)
 	if filepath.Dir(absfilename) == absdirname {
-		return errors.New("Cannot output to the directory that is being packed.")
+		return errors.New("cannot output to the directory that is being packed")
 	}
 
 	flags := uint32(0)
@@ -76,21 +76,21 @@ func commandPack(args []string) error {
 		flags |= flagEncrypted
 	}
 
-	if gameId, err := stringToGameId(*game); err != nil {
+	if gameID, err := stringToGameID(*game); err != nil {
 		return err
 	} else if f, err := os.OpenFile(absfilename, os.O_CREATE|os.O_TRUNC|os.O_WRONLY, 0644); err != nil {
 		return err
 	} else {
 		defer f.Close()
-		if files, err := listFilesToPack(absdirname, *database, gameId); err != nil {
+		files, err := listFilesToPack(absdirname, *database, gameID)
+		if err != nil {
 			return err
-		} else {
-			wb := bufio.NewWriter(f)
-			if err := pack(wb, files, gameId, flags, defaultKeySource); err != nil {
-				return err
-			} else if err := wb.Flush(); err != nil {
-				return err
-			}
+		}
+		wb := bufio.NewWriter(f)
+		if err := pack(wb, files, gameID, flags, defaultKeySource); err != nil {
+			return err
+		} else if err := wb.Flush(); err != nil {
+			return err
 		}
 	}
 
@@ -108,24 +108,24 @@ func commandUnpack(args []string) error {
 	if err := cmd.Parse(args); err != nil {
 		return err
 	} else if *dirname == "" {
-		return errors.New("No output directory specified.")
+		return errors.New("no output directory specified")
 	} else if *filename == "" {
-		return errors.New("No mix file specified.")
+		return errors.New("no mix file specified")
 	}
 
 	absdirname, _ := filepath.Abs(*dirname)
 	absfilename, _ := filepath.Abs(*filename)
 	if filepath.Dir(absfilename) == absdirname {
-		return errors.New("Cannot output to the same directory where the input mix file is located.")
+		return errors.New("cannot output to the same directory where the input mix file is located")
 	} else if err := os.MkdirAll(absdirname, os.ModePerm); err != nil {
 		return err
-	} else if gameId, err := stringToGameId(*game); err != nil {
+	} else if gameID, err := stringToGameID(*game); err != nil {
 		return err
 	} else if f, err := os.Open(*filename); err != nil {
 		return err
 	} else if stat, err := f.Stat(); err != nil {
 		return err
-	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameId); err != nil {
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameID); err != nil {
 		return err
 	} else {
 		defer f.Close()
@@ -162,16 +162,16 @@ func commandInfo(args []string) error {
 	if err := cmd.Parse(args); err != nil {
 		return err
 	} else if len(*filename) == 0 {
-		return errors.New("No mix file specified.")
+		return errors.New("no mix file specified")
 	}
 
-	if gameId, err := stringToGameId(*game); err != nil {
+	if gameID, err := stringToGameID(*game); err != nil {
 		return err
 	} else if f, err := os.Open(*filename); err != nil {
 		return err
 	} else if stat, err := f.Stat(); err != nil {
 		return err
-	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameId); err != nil {
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameID); err != nil {
 		return err
 	} else {
 		defer f.Close()
@@ -201,16 +201,16 @@ func commandRepair(args []string) error {
 	if err := cmd.Parse(args); err != nil {
 		return err
 	} else if len(*filename) == 0 {
-		return errors.New("No mix file specified.")
+		return errors.New("no mix file specified")
 	}
 
-	if gameId, err := stringToGameId(*game); err != nil {
+	if gameID, err := stringToGameID(*game); err != nil {
 		return err
 	} else if f, err := os.OpenFile(*filename, os.O_RDWR, 0); err != nil {
 		return err
 	} else if stat, err := f.Stat(); err != nil {
 		return err
-	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameId); err != nil {
+	} else if mix, err := unpackMixFile(io.NewSectionReader(f, 0, stat.Size()), gameID); err != nil {
 		return err
 	} else {
 		defer f.Close()

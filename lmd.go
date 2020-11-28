@@ -8,19 +8,19 @@ import (
 	"io"
 )
 
-type gameId int
+type gameID int
 
 const (
-	gameId_CC1 gameId = 0
-	gameId_RA1 gameId = 1
-	gameId_CC2 gameId = 2
-	gameId_RA2 gameId = 5
-	lmdHeader         = "XCC by Olaf van der Spek\x1a\x04\x17\x27\x10\x19\x80\x00"
+	gameCC1   gameID = 0
+	gameRA1   gameID = 1
+	gameCC2   gameID = 2
+	gameRA2   gameID = 5
+	lmdHeader        = "XCC by Olaf van der Spek\x1a\x04\x17\x27\x10\x19\x80\x00"
 )
 
 const lmdFilename = "local mix database.dat"
 
-func lmdWrite(gameId gameId, files []fileInfo) (fileInfo, error) {
+func lmdWrite(game gameID, files []fileInfo) (fileInfo, error) {
 	var b bytes.Buffer
 
 	if _, err := fmt.Fprintf(&b, lmdHeader); err != nil {
@@ -31,13 +31,13 @@ func lmdWrite(gameId gameId, files []fileInfo) (fileInfo, error) {
 	var filesToKeep []fileInfo
 
 	for _, f := range files {
-		if _, ok := filenameIsId(f.Name()); !ok {
+		if _, ok := filenameIsID(f.Name()); !ok {
 			filesToKeep = append(filesToKeep, f)
 			size += uint32(1 + len(f.Name()))
 		}
 	}
 
-	for _, v := range []uint32{size, 0, 0, uint32(gameId), 1 + uint32(len(files))} {
+	for _, v := range []uint32{size, 0, 0, uint32(game), 1 + uint32(len(files))} {
 		if _, err := writeUint32(&b, v); err != nil {
 			return nil, err
 		}
@@ -74,27 +74,25 @@ func lmdRead(r io.ReadSeeker) (map[uint32]string, error) {
 		return nil, err
 	} else {
 		mapper := map[uint32]string{}
-		fileId := getFileId(gameId(gameid))
+		fileID := getFileID(gameID(gameid))
 
 		scanner := bufio.NewScanner(r)
 		scanner.Split(scanZStrings)
 		for scanner.Scan() {
 			filename := scanner.Text()
-			mapper[fileId(filename)] = filename
+			mapper[fileID(filename)] = filename
 		}
 
 		if err := scanner.Err(); err != nil {
 			return nil, err
-		} else {
-			return mapper, nil
 		}
+		return mapper, nil
 	}
 }
 
-func getLmdFileId(game gameId) uint32 {
-	if game <= gameId_RA1 {
+func getLmdFileID(game gameID) uint32 {
+	if game <= gameRA1 {
 		return 0x54C2D545
-	} else {
-		return 0x366E051F
 	}
+	return 0x366E051F
 }

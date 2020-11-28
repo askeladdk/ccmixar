@@ -7,22 +7,21 @@ import (
 	"strings"
 )
 
-type fileId func(name string) uint32
+type fileID func(name string) uint32
 
-func filenameIsId(name string) (uint32, bool) {
+func filenameIsID(name string) (uint32, bool) {
 	if len(name) == 8 {
-		if decoded, err := hex.DecodeString(name); err != nil {
+		decoded, err := hex.DecodeString(name)
+		if err != nil {
 			return 0, false
-		} else {
-			return binary.BigEndian.Uint32(decoded), true
 		}
-	} else {
-		return 0, false
+		return binary.BigEndian.Uint32(decoded), true
 	}
+	return 0, false
 }
 
-func fileIdV1(name string) uint32 {
-	if id, ok := filenameIsId(name); ok {
+func fileIDV1(name string) uint32 {
+	if id, ok := filenameIsID(name); ok {
 		return id
 	}
 
@@ -77,8 +76,8 @@ var adlerTable = &crc32.Table{
 	0xb3667a2e, 0xc4614ab8, 0x5d681b02, 0x2a6f2b94, 0xb40bbe37, 0xc30c8ea1, 0x5a05df1b, 0x2d02ef8d,
 }
 
-func fileIdV2(name string) uint32 {
-	if id, ok := filenameIsId(name); ok {
+func fileIDV2(name string) uint32 {
+	if id, ok := filenameIsID(name); ok {
 		return id
 	}
 
@@ -97,15 +96,13 @@ func fileIdV2(name string) uint32 {
 		}
 
 		return crc32.Update(0, adlerTable, buf)
-	} else {
-		return crc32.Update(0, adlerTable, []byte(name))
 	}
+	return crc32.Update(0, adlerTable, []byte(name))
 }
 
-func getFileId(gameId gameId) fileId {
-	if gameId <= gameId_RA1 {
-		return fileIdV1
-	} else {
-		return fileIdV2
+func getFileID(gameID gameID) fileID {
+	if gameID <= gameRA1 {
+		return fileIDV1
 	}
+	return fileIDV2
 }

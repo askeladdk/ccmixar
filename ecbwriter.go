@@ -19,16 +19,16 @@ func newEcbWriter(w io.Writer, b cipher.Block) *ecbWriter {
 	}
 }
 
-func (this *ecbWriter) Write(p []byte) (int, error) {
-	blksz := this.block.BlockSize()
+func (w *ecbWriter) Write(p []byte) (int, error) {
+	blksz := w.block.BlockSize()
 
-	this.buffer.Write(p)
+	w.buffer.Write(p)
 
-	for this.buffer.Len() >= blksz {
+	for w.buffer.Len() >= blksz {
 		blk := make([]byte, blksz)
-		this.buffer.Read(blk)
-		this.block.Encrypt(blk, blk)
-		if _, err := this.writer.Write(blk); err != nil {
+		w.buffer.Read(blk)
+		w.block.Encrypt(blk, blk)
+		if _, err := w.writer.Write(blk); err != nil {
 			return 0, err
 		}
 	}
@@ -36,12 +36,12 @@ func (this *ecbWriter) Write(p []byte) (int, error) {
 	return len(p), nil
 }
 
-func (this *ecbWriter) Flush() error {
-	if this.buffer.Len() != 0 {
-		blk := make([]byte, this.block.BlockSize())
-		this.buffer.Read(blk)
-		this.block.Encrypt(blk, blk)
-		if _, err := this.writer.Write(blk); err != nil {
+func (w *ecbWriter) Flush() error {
+	if w.buffer.Len() != 0 {
+		blk := make([]byte, w.block.BlockSize())
+		w.buffer.Read(blk)
+		w.block.Encrypt(blk, blk)
+		if _, err := w.writer.Write(blk); err != nil {
 			return err
 		}
 	}

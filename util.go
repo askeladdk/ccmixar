@@ -22,18 +22,16 @@ func readUint16(r io.Reader) (uint16, error) {
 	b := [2]byte{}
 	if _, err := r.Read(b[:]); err != nil {
 		return 0, err
-	} else {
-		return binary.LittleEndian.Uint16(b[:]), nil
 	}
+	return binary.LittleEndian.Uint16(b[:]), nil
 }
 
 func readUint32(r io.Reader) (uint32, error) {
 	b := [4]byte{}
 	if _, err := r.Read(b[:]); err != nil {
 		return 0, err
-	} else {
-		return binary.LittleEndian.Uint32(b[:]), nil
 	}
+	return binary.LittleEndian.Uint32(b[:]), nil
 }
 
 func writeUint16(w io.Writer, v uint16) (int, error) {

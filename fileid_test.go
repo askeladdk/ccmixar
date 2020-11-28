@@ -17,7 +17,7 @@ func Test_fileIdV1(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		if fileIdV1(test.name) != test.id {
+		if fileIDV1(test.name) != test.id {
 			t.Fatal(test.name)
 		}
 	}
@@ -35,7 +35,7 @@ func Test_fileIdV2(t *testing.T) {
 	}
 
 	for _, test := range tests {
-		if fileIdV2(test.name) != test.id {
+		if fileIDV2(test.name) != test.id {
 			t.Fatal(test.name)
 		}
 	}

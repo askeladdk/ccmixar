@@ -19,18 +19,17 @@ func newECBReader(r io.Reader, b cipher.Block) *ecbReader {
 	}
 }
 
-func (this *ecbReader) Read(p []byte) (int, error) {
-	if this.buffer.Len() < len(p) {
-		blksz := this.block.BlockSize()
+func (r *ecbReader) Read(p []byte) (int, error) {
+	if r.buffer.Len() < len(p) {
+		blksz := r.block.BlockSize()
 		n := (len(p) + blksz - 1) & ^(blksz - 1)
 		t := make([]byte, n)
-		if _, err := this.reader.Read(t); err != nil {
+		if _, err := r.reader.Read(t); err != nil {
 			return 0, err
-		} else {
-			this.block.Decrypt(t, t)
-			this.buffer.Write(t)
 		}
+		r.block.Decrypt(t, t)
+		r.buffer.Write(t)
 	}
 
-	return this.buffer.Read(p)
+	return r.buffer.Read(p)
 }

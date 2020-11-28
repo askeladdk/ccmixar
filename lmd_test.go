@@ -6,10 +6,10 @@ import (
 	"testing"
 )
 
-func Test_lmdWrite(t *testing.T) {
+func TestLmdWrite(t *testing.T) {
 	if files, err := readDirectory("./test/files"); err != nil {
 		t.Fatal(err)
-	} else if lmd, err := lmdWrite(gameId_CC1, files); err != nil {
+	} else if lmd, err := lmdWrite(gameCC1, files); err != nil {
 		t.Fatal(err)
 	} else if f, err := os.OpenFile("./test/local mix database.dat", os.O_CREATE|os.O_RDWR, 0644); err != nil {
 		t.Fatal(err)
