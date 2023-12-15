@@ -23,7 +23,7 @@ const lmdFilename = "local mix database.dat"
 func lmdWrite(game gameID, files []fileInfo) (fileInfo, error) {
 	var b bytes.Buffer
 
-	if _, err := fmt.Fprintf(&b, lmdHeader); err != nil {
+	if _, err := b.WriteString(lmdFilename); err != nil {
 		return nil, err
 	}
 

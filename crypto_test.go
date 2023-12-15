@@ -37,7 +37,7 @@ func TestBlowfishKeyFromSource(t *testing.T) {
 	}
 
 	bfkey := blowfishKeyFromKeySource(keySource)
-	if bytes.Compare(bfkey, expectedBlowfishKey) != 0 {
+	if !bytes.Equal(bfkey, expectedBlowfishKey) {
 		t.Fatal("unexpected blowfish key")
 	}
 }

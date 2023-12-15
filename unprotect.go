@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"encoding/binary"
 	"io"
 
 	"golang.org/x/crypto/blowfish"
@@ -21,7 +22,7 @@ func (mix *mixFile) recoverLmdIndex() (uint32, uint32, bool) {
 			return 0, 0, false
 		}
 		for i := uint32(0); i < uint32(n); i++ {
-			if bytes.Compare(buf[i:i+32], []byte(lmdHeader)) == 0 {
+			if bytes.Equal(buf[i:i+32], []byte(lmdHeader)) {
 				lmdofs := offset + i
 				if _, err := r.Seek(int64(lmdofs+32), io.SeekStart); err != nil {
 					return 0, 0, false
@@ -57,24 +58,29 @@ func (mix *mixFile) RecoverLmd() {
 
 func (mix *mixFile) RewriteHeader(w io.Writer) error {
 	writeIndex := func(w io.Writer) error {
-		writeUint16(w, uint16(len(mix.files)))
-		writeUint32(w, mix.size)
-
-		for _, file := range mix.files {
-			writeUint32(w, file.id)
-			writeUint32(w, file.offset)
-			writeUint32(w, file.size)
+		buf := make([]byte, 6+12*len(mix.files))
+		binary.LittleEndian.PutUint16(buf[0:], uint16(len(mix.files)))
+		binary.LittleEndian.PutUint32(buf[4:], mix.size)
+		for i, file := range mix.files {
+			binary.LittleEndian.PutUint32(buf[6+12*i+0:], file.id)
+			binary.LittleEndian.PutUint32(buf[6+12*i+4:], file.offset)
+			binary.LittleEndian.PutUint32(buf[6+12*i+8:], file.size)
 		}
 
-		return nil
+		_, err := w.Write(buf)
+		return err
 	}
 
 	if mix.game != gameCC1 {
-		writeUint32(w, mix.flags)
+		if _, err := writeUint32(w, mix.flags); err != nil {
+			return err
+		}
 	}
 
 	if mix.game != gameCC1 && (mix.flags&flagEncrypted) != 0 {
-		w.Write(mix.keysrc)
+		if _, err := w.Write(mix.keysrc); err != nil {
+			return err
+		}
 		bfkey := blowfishKeyFromKeySource(mix.keysrc)
 		b, err := blowfish.NewCipher(bfkey)
 		if err != nil {

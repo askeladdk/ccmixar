@@ -26,7 +26,7 @@ func (w *ecbWriter) Write(p []byte) (int, error) {
 
 	for w.buffer.Len() >= blksz {
 		blk := make([]byte, blksz)
-		w.buffer.Read(blk)
+		_, _ = w.buffer.Read(blk)
 		w.block.Encrypt(blk, blk)
 		if _, err := w.writer.Write(blk); err != nil {
 			return 0, err
@@ -39,7 +39,7 @@ func (w *ecbWriter) Write(p []byte) (int, error) {
 func (w *ecbWriter) Flush() error {
 	if w.buffer.Len() != 0 {
 		blk := make([]byte, w.block.BlockSize())
-		w.buffer.Read(blk)
+		_, _ = w.buffer.Read(blk)
 		w.block.Encrypt(blk, blk)
 		if _, err := w.writer.Write(blk); err != nil {
 			return err

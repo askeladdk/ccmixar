@@ -129,8 +129,9 @@ func commandUnpack(args []string) error {
 		return err
 	} else {
 		defer f.Close()
+
 		mix.RecoverLmd()
-		mix.ReadLmd()
+		_ = mix.ReadLmd()
 
 		for i, entry := range mix.files {
 			infile := mix.OpenFile(i)
@@ -175,8 +176,9 @@ func commandInfo(args []string) error {
 		return err
 	} else {
 		defer f.Close()
+
 		mix.RecoverLmd()
-		mix.ReadLmd()
+		_ = mix.ReadLmd()
 
 		fmt.Printf("checksum:  %t\n", (mix.flags&flagChecksum) != 0)
 		fmt.Printf("encrypted: %t\n", (mix.flags&flagEncrypted) != 0)
@@ -214,8 +216,12 @@ func commandRepair(args []string) error {
 		return err
 	} else {
 		defer f.Close()
+
 		mix.RecoverLmd()
-		f.Seek(0, io.SeekStart)
+		if _, err := f.Seek(0, io.SeekStart); err != nil {
+			return err
+		}
+
 		if err := mix.RewriteHeader(f); err != nil {
 			return err
 		}
