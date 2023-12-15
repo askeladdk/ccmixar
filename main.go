@@ -103,6 +103,7 @@ func commandUnpack(args []string) error {
 		filename = cmd.String("mix", "", "Path to .mix file.")
 		dirname  = cmd.String("dir", "", "Output directory.")
 		game     = cmd.String("game", "", "One of cc1, cc2, ra1, ra2.")
+		gmd      = cmd.String("csv", "", "Path to mix database csv.")
 	)
 
 	if err := cmd.Parse(args); err != nil {
@@ -130,6 +131,7 @@ func commandUnpack(args []string) error {
 	} else {
 		defer f.Close()
 
+		_ = mix.ReadGmd(*gmd)
 		mix.RecoverLmd()
 		_ = mix.ReadLmd()
 
@@ -158,6 +160,7 @@ func commandInfo(args []string) error {
 		cmd      = flag.NewFlagSet("info", flag.ExitOnError)
 		filename = cmd.String("mix", "", "Path to .mix file.")
 		game     = cmd.String("game", "", "One of cc1, cc2, ra1, ra2.")
+		gmd      = cmd.String("csv", "", "Path to mix database csv.")
 	)
 
 	if err := cmd.Parse(args); err != nil {
@@ -177,6 +180,7 @@ func commandInfo(args []string) error {
 	} else {
 		defer f.Close()
 
+		_ = mix.ReadGmd(*gmd)
 		mix.RecoverLmd()
 		_ = mix.ReadLmd()
 

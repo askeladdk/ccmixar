@@ -152,3 +152,16 @@ func (mix *mixFile) ReadLmd() error {
 		return nil
 	}
 }
+
+func (mix *mixFile) ReadGmd(filename string) error {
+	mapper, err := gmdRead(filename, mix.game)
+	if err != nil {
+		return err
+	}
+	for i := 0; i < len(mix.files); i++ {
+		if name, ok := mapper[mix.files[i].id]; ok {
+			mix.files[i].name = name
+		}
+	}
+	return nil
+}

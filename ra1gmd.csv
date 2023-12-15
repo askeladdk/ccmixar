@@ -1,0 +1,2483 @@
+local mix database.dat	mix database
+120MM.SHP	MISC: Cannon shot
+12METFNT.FNT	FNT: 12 Met Fnt
+1MINR.AUD	1 minute left
+10MINR.AUD	10 minutes left
+1OBJMET1.AUD	1st objective met
+1TNK.SHP	UNIT: Light tank
+1TNKICON.SHP	ICON: Light tank
+20MINR.AUD	20 minutes left
+2MINR.AUD	2 minutes left
+2ND_HAND.AUD	2nd_Hand
+2OBJMET1.AUD	2nd objective met
+2TNK.SHP	UNIT: Medium tank
+2TNKICON.SHP	ICON: Medium tank
+30MINR.AUD	30 minutes left
+3MINR.AUD	3 minutes left
+3OBJMET1.AUD	3rd objective met
+3POINT.FNT	FNT: 3 Point
+3TNK.SHP	UNIT: Heavy tank
+3TNKICON.SHP	ICON: Heavy tank
+40MINR.AUD	40 minutes left
+4MINR.AUD	4 minutes left
+4TNK.SHP	UNIT: Mammoth tank
+4TNKICON.SHP	ICON: Mammoth tank
+50CAL.SHP	MISC: Cannon shot
+5MINR.AUD	5 minutes left
+6.FNT	FNT: 6
+6POINT.FNT	FNT: 6 Point
+8POINT.FNT	FNT: 8 Point
+AACANON3.AUD	Solid turret
+AAGUN.VQA	A.A. Gun Shooting Yak
+AAGUN.VQP	VQP: A.A. Gun Shooting Yak
+AAPPRO1.AUD	allied forces apporaching
+AARIVE1.AUD	allied reinforcements comming from east
+AARRIVE1.AUD	allied reinforcements have arrived
+AARRIVN1.AUD	allied reinforcements comming from north
+AARRIVS1.AUD	allied reinforcements comming from south
+AARRIVW1.AUD	allied reinforcements comming from west
+AAVAIL1.AUD	A-bomb available
+ABLDGIN1.AUD	building
+ACKNO.R00	Soviet #1 Achnoledged
+ACKNO.R01	Soviet #2 Achnoledged
+ACKNO.R02	Soviet #3 Achnoledged
+ACKNO.R03	Soviet #4 Achnoledged
+ACKNO.V00	Allies #1 Achnoledged
+ACKNO.V01	Allies #2 Achnoledged
+ACKNO.V02	Allies #3 Achnoledged
+ACKNO.V03	Allies #4 Achnoledged
+AFALLEN1.AUD	allied forces have fallen
+AFFIRM1.R00	Soviet #1 Affirmative
+AFFIRM1.R01	Soviet #2 Affirmative
+AFFIRM1.R02	Soviet #3 Affirmative
+AFFIRM1.R03	Soviet #4 Affirmative
+AFFIRM1.V00	Allies #1 Affirmative
+AFFIRM1.V01	Allies #2 Affirmative
+AFFIRM1.V02	Allies #3 Affirmative
+AFFIRM1.V03	Allies #4 Affirmative
+AFLD.SHP	BLDG: Airfield
+AFLDICON.SHP	ICON: Airfield
+AFLDMAKE.SHP	MAKE: Airfield
+AFTR_HI.PCX	PICT: Iron Curtain Destroyed
+AFTR_LO.CPS	PICT: Iron Curtain Destroyed
+AFTRMATH.INI	INIF: Aftermath Game Settings
+AFTRMATH.VQA	Iron Curtain Destroyed
+AFTRMATH.VQP	VQP: Iron Curtain Destroyed
+AGUN.SHP	BLDG: AA Gun
+AGUNICON.SHP	ICON: AA Gun
+AGUNMAKE.SHP	MAKE: AA Gun
+AIRFIELD.VQA	Yak Squadren
+AIRFIELD.VQP	VQP: Yak Squadren
+ALAUNCH1.AUD	A-bomb launch detected
+ALIBACKH.PCX	PICT: Allies Score screen picture
+ALIPAPER.CPS	PICT: Allies logo
+ALIPAPER.PCX	PICT: Allies logo
+ALI-TRAN.WSA	ANIM: Allies score Screen
+ALLIES.MIX	ALLIES.MIX
+ALLY1.VQA	Get Einstien
+ALLY1.VQP	VQP: Get Einstien
+ALLY10.VQA	Stop Nukes
+ALLY10.VQP	VQP: Stop Nukes
+ALLY10B.VQA	Deactivate Launch Terminals
+ALLY10B.VQP	VQP: Deactivate Launch Terminals
+ALLY11.VQA	Clear The River
+ALLY11.VQP	VQP: Clear The River
+ALLY12.VQA	Infiltrate Tech Centers
+ALLY12.VQP	VQP: Infiltrate Tech Centers
+ALLY14.VQA	Final Assult On Moscow
+ALLY14.VQP	VQP: Final Assult On Moscow
+ALLY2.VQA	Clear The Way For The Convoy
+ALLY2.VQP	VQP: Clear The Way For The Convoy
+ALLY4.VQA	Close The Mountain Pass
+ALLY4.VQP	VQP: Close The Mountain Pass
+ALLY5.VQA	Rescue Tanya
+ALLY5.VQP	VQP: Rescue Tanya
+ALLY6.VQA	Find The Iron Curtain
+ALLY6.VQP	VQP: Find The Iron Curtain
+ALLY8.VQA	Protect The Tech Centre
+ALLY8.VQP	VQP: Protect The Tech Centre
+ALLY9.VQA	Rescue Kosygin
+ALLY9.VQP	VQP: Rescue Kosygin
+ALLYEND.VQA	Stalin Is Dead
+ALLYEND.VQP	VQP: Stalin Is Dead
+ALLYMORF.VQA	Allied Logo
+ALLYMORF.VQP	VQP: Allied Logo
+ALY1.PCX	PICT: Allies First Briefing
+ALY1-LO.CPS	PICT: Allies First Briefing
+ANT1.SHP	UNIT: Ant #1
+ANT2.SHP	UNIT: Ant #2
+ANT3.SHP	UNIT: Ant #3
+ANTBITE.AUD	Ant Bite
+ANTDIE.AUD	Ant Die
+ANTDIE.SHP	MISC: Ant Death
+ANTEND.VQA	Queen Ant dying in fire
+ANTEND.VQP	VQP: Queen Ant dying in fire
+ANTINTRO.VQA	It Came from red alert
+ANTINTRO.VQP	VQP: It Came from red alert
+APC.SHP	UNIT: APC
+APC_HI.PCX	PICT: APC Running Away
+APC_LO.CPS	PICT: APC Running Away
+APCESCPE.VQA	APC Running Away
+APCESCPE.VQP	VQP: APC Running Away
+APCICON.SHP	ICON: APC
+APHI0049.PCX	PICT: Helicopters
+APLO0049.CPS	PICT: Helicpoters
+APPEAR1.AUD	AUDF:
+APREP1.AUD	A-bomb preping
+APWR.SHP	BLDG: Advanced powerplant
+APWRICON.SHP	ICON: Advanced powerplant
+APWRMAKE.SHP	MAKE: Advaced powerplant
+ARAZIOD.AUD	Arazoid
+AREADY1.AUD	A-bomb ready
+ARMOR.SHP	CRAT: Unit armor upgrade
+ARMORUP1.AUD	unit armour upgraded
+ARRO0001.INT	Red Stripe On Green
+ARRO0002.INT	Red Stripe On Green
+ARRO0003.INT	Red Stripe On Green
+ARRO0004.INT	Red Stripe On Green
+ARRO0005.INT	Red Stripe On Green
+ARRO0006.INT	Red Stripe On Green
+ARRO0007.INT	Red Stripe On Green
+ARRO0008.INT	Red Stripe On Green
+ARRO0009.INT	Red Stripe On Green
+ARRO0010.INT	Red Stripe On Green
+ARRO0011.INT	Red Stripe On Green
+ARRO0012.INT	Red Stripe On Green
+ARRO0013.INT	Red Stripe On Green
+ARRO0014.INT	Red Stripe On Green
+ARRO0015.INT	Red Stripe On Green
+ART-EXP1.SHP	MISC: Explosion
+ARTY.SHP	UNIT: Artillery
+ARTYICON.SHP	ICON: Artillery
+ASELECT1.AUD	allied forces selected
+ASSESS.VQA	Allied Found Iron Curtain
+ASSESS.VQP	VQP: Allied Found Iron Curtain
+ATEK.SHP	BLDG: Allied Techcenter
+ATEKICON.SHP	ICON: Techcenter
+ATEKMAKE.SHP	MAKE: Allied Tech center
+ATLNCH1.AUD	A-bomb launch detcted
+ATOMICDN.SHP	MISC: Nuclear missle landing
+ATOMICON.SHP	ICON: Atom bomb
+ATOMICUP.SHP	MISC: Nuclear missle launching
+ATOMSFX.SHP	MISC: Nuclear blast
+ATPREP1.AUD	A-bomb preping
+AUNITL1.AUD	airborne unit lost
+AVERTED.VQA	Meltdown Averted
+AVERTED.VQP	VQP: Meltdown Averted
+AWAIT.AUD	Afterlife
+AWAIT_R.AUD	Afterlife
+AWAIT1.R00	Soviet #1 Waiting orders
+AWAIT1.R01	Soviet #2 Waiting orders
+AWAIT1.R02	Soviet #3 Waiting orders
+AWAIT1.R03	Soviet #4 Waiting orders
+AWAIT1.V00	Allies #1 Waiting orders
+AWAIT1.V01	Allies #2 Waiting orders
+AWAIT1.V02	Allies #3 Waiting orders
+AWAIT1.V03	Allies #4 Waiting orders
+B1.SNO	Rocks
+B1.TEM	Rocks
+B2.SNO	Rocks
+B2.TEM	Rocks
+B3.SNO	Rocks
+B3.TEM	Rocks
+BACKSTAB.AUD	BackStab
+BADR.SHP	UNIT: Badger Bomber
+BADRICON.SHP	ICON: Badger
+BAR3BHR.SHP	MISC: Allies Score bar win
+BAR3BLU.SHP	MISC: Allies Score bar dos
+BAR3RED.SHP	MISC: Soviet Score bar dos
+BAR3RHR.SHP	MISC: Soviet Score bar win
+BARB.SHP	MISC: Razor wire
+BARL.SHP	MISC: Barrel
+BARR.SHP	BLDG: Soviet Barracks
+BARRICON.SHP	ICON: Barracks
+BARRMAKE.SHP	MAKE: Barracks
+BASEATK1.AUD	base under atack
+BATTLE.VQA	Destroyed Vechicles
+BATTLE.VQP	VQP: Destroyed Vechicles
+BCT1.AUD	battle control terminated
+BEACHEAD.VQA	Transport Beach Landing
+BEACHEAD.VQP	VQP: Transport Beach Landing
+BEEPSLCT.AUD	Map sound #2
+BEEPY1.AUD	AUDF:
+BEEPY2.AUD	AUDF:
+BEEPY6.AUD	AUDF:
+BIB1.SNO	MISC: Bib
+BIB1.TEM	MISC: Bib
+BIB2.SNO	MISC: Bib
+BIB2.TEM	MISC: Bib
+BIB3.SNO	MISC: Bib
+BIB3.TEM	MISC: Bib
+BIGF226M.AUD	Bigfoot
+BINOC.VQA	Guy Viewing Tanks Through Binoculars
+BINOC.VQP	VQP: Guy Viewing Tanks Through Binoculars
+BIO.SHP	BLDG: Bio Research Lab
+BIOMAKE.SHP	MAKE: Bio Research Lab
+BLDGINF1.AUD	building infiltrated
+BLDGPRG1.AUD	building in progress
+BLEEP11.AUD	Map sound #3
+BLEEP11.AUD	AUDF:
+BLEEP12.AUD	Map sound #4
+BLEEP13.AUD	Map sound #5
+BLEEP17.AUD	Map sound #6
+BLEEP17.AUD	AUDF:
+BLEEP5.AUD	Alarm
+BLEEP6.AUD	Radar map alert
+BLEEP9.AUD	Radar map power on
+BMAP.VQA	Dagger Falls On Map Of Europe & Europe Turns Red
+BMAP.VQP	VQP: Dagger Falls On Map Of Europe & Europe Turns Red
+BNHI0020.PCX	PICT: Guy Viewing Tanks Through Binoculars
+BNLO0020.CPS	PICT: Guy Viewing Tanks Through Binoculars
+BOG.AUD	Bog
+BOMB.SHP	MISC: Grenade
+BOMBIT1.AUD	Tanya: Chaching
+BOMBLET.SHP	MISC: Bomblet
+BOMBRUN.VQA	Badger Blows Up Powerplant
+BOMBRUN.VQP	VQP: Badger Blows Up Powerplant
+BOXES01.INT	Boxes #1
+BOXES02.INT	Boxes #2
+BOXES03.INT	Boxes #3
+BOXES04.INT	Boxes #4
+BOXES05.INT	Boxes #6
+BOXES06.INT	Boxes #7
+BOXES07.INT	Boxes #8
+BOXES08.INT	Boxes #9
+BOXES09.INT	Boxes #10
+BR1A.SNO	Bridge
+BR1A.TEM	Bridge
+BR1B.SNO	Bridge
+BR1B.TEM	Bridge
+BR1C.SNO	Bridge
+BR1C.TEM	Bridge
+BR1X.SNO	Bridge Segment
+BR1X.TEM	Bridge Segment
+BR2A.SNO	Bridge
+BR2A.TEM	Bridge
+BR2B.SNO	Bridge
+BR2B.TEM	Bridge
+BR2C.SNO	Bridge
+BR2C.TEM	Bridge
+BR2X.SNO	Bridge Segment
+BR2X.TEM	Bridge Segment
+BR3A.SNO	Bridge
+BR3A.TEM	Bridge
+BR3B.SNO	Bridge
+BR3B.TEM	Bridge
+BR3C.SNO	Bridge
+BR3C.TEM	Bridge
+BR3D.SNO	Bridge
+BR3D.TEM	Bridge
+BR3E.SNO	Bridge
+BR3E.TEM	Bridge
+BR3F.SNO	Bridge
+BR3F.TEM	Bridge
+BRDGTILT.VQA	A Bridge
+BRDGTILT.VQP	VQP: A Bridge
+BRIDGE1.SNO	Bridge
+BRIDGE1.TEM	Bridge
+BRIDGE1D.SNO	Bridge
+BRIDGE1D.TEM	Bridge
+BRIDGE1H.SNO	Bridge
+BRIDGE1H.TEM	Bridge
+BRIDGE1X.SNO	Bridge Segment
+BRIDGE1X.TEM	Bridge Segment
+BRIDGE2.SNO	Bridge
+BRIDGE2.TEM	Bridge
+BRIDGE2D.SNO	Bridge
+BRIDGE2D.TEM	Bridge
+BRIDGE2H.SNO	Bridge
+BRIDGE2H.TEM	Bridge
+BRIDGE2X.SNO	Bridge Segment
+BRIDGE2X.TEM	Bridge Segment
+BRIEFING.AUD	AUDF:
+BRIK.SHP	MISC: Concrete wall
+BRIKICON.SHP	ICON: Concrete wall
+BRL3.SHP	MISC: Barrels
+BTN-DN.SHP	BUTT: Down
+BTN-PL.SHP	BUTT: Play
+BTN-ST.SHP	BUTT: Stop
+BTN-UP.SHP	BUTT: Up
+BUILD5.AUD	Building being placed
+BURN-L.SHP	MISC: Medium fire for trees
+BURN-M.SHP	MISC: Small fire for trees
+BURN-S.SHP	MISC: Small fire for trees
+BUZZY1.AUD	Alarm
+BUZZY1.AUD	Alarm
+C1.SHP	UNIT: Civilian #1
+C2.SHP	UNIT: Civilian #2
+C3.SHP	UNIT: Civilian #3
+C4.SHP	UNIT: Civilian #4
+CA.SHP	UNIT: Cruiser
+CAICON.SHP	ICON: Cruiser
+CAMICON.SHP	ICON: Spy Plane
+CANCELD1.AUD	AUDF:
+CANCLD1.AUD	cancelled
+CANNON1.AUD	Mammoth tank gun
+CANNON2.AUD	Light tank gun
+CARR.SHP	UNIT: Helicarrier
+CARRICON.SHP	ICON: Helicarrier
+CASHDN1.AUD	Credit out
+CASHTURN.AUD	Selling
+CASHUP1.AUD	Credit in
+CENTER16.AUD	AUDF:
+CHAN.SHP	UNIT: Chan
+CHAOS2.AUD	Chaos2
+CHNGDIR.AUD	AUDF:
+CHROCHR1.AUD	chronosphere charging
+CHRONBOX.SHP	CRAT: Chronosphere
+CHRONO2.AUD	Chronosphere sound
+CHRORDY1.AUD	chronosphere ready
+CHROTNK1.AUD	Chrono tank sound
+CHROYES1.AUD	chronosphere test successful
+CHUTE1.AUD	Paratroops
+CLANK1.AUD	AUDF:
+CLEAR1.INT	Blank Wall Tile
+CLEAR1.SNO	Clear Terrain
+CLEAR1.TEM	Clear Terrain
+CLOCK.SHP	MISC: Time dial
+CLOCK1.AUD	AUDF:
+CMDCNTR1.AUD	command centre under attack
+CMON1.AUD	Tanya: Shake it baby!
+CNTLDED1.AUD	control centre deactivated
+COMNDOF1.AUD	commando freed
+COMNDOR1.AUD	commando rescued
+CONQUER.ENG	MISC: Ingame strings
+CONQUER.ENG	MISC: Ingame strings
+CONQUER.MIX	CONQUER.MIX
+CONSCMP1.AUD	construction complete
+CONVLST1.AUD	convoy unit lost
+CONVYAP1.AUD	convoy approaching
+CORPSE1.SNO	MISC: Soldier death #1
+CORPSE1.TEM	MISC: Soldier death #1
+CORPSE2.SNO	MISC: Soldier death #2
+CORPSE2.TEM	MISC: Soldier death #2
+CORPSE3.SNO	MISC: Soldier death #3
+CORPSE3.TEM	MISC: Soldier death #3
+COUNTDWN.VQA	Meltedown Imminent
+COUNTDWN.VQP	VQP: Meltedown Imminent
+COUNTRY1.AUD	AUDF:
+COUNTRY4.AUD	AUDF:
+COUNTRYA.SHP	MISC: African Countries
+COUNTRYE.SHP	MISC: European Countries
+CR1.SNO	MISC: Crater
+CR1.TEM	MISC: Crater
+CR2.SNO	MISC: Crater
+CR2.TEM	MISC: Crater
+CR3.SNO	MISC: Crater
+CR3.TEM	MISC: Crater
+CR4.SNO	MISC: Crater
+CR4.TEM	MISC: Crater
+CR5.SNO	MISC: Crater
+CR5.TEM	MISC: Crater
+CR6.SNO	MISC: Crater
+CR6.TEM	MISC: Crater
+CREDIT1.AUD	credits stolen
+CREDITS.AUD	End Credits
+CREDITS.ENG	MISC: Credits
+CREDITS.TXT	MISC: Credits
+CREDSA.SHP	MISC: allies Credits dos
+CREDSAHR.SHP	MISC: allies Credits win
+CREDSU.SHP	MISC: soviet Credits dos
+CREDSUHR.SHP	MISC: soviet Credits win
+CRMBLE2.AUD	Wall crumbling
+CRONFAIL.VQA	Chronosphere Test Failed
+CRONFAIL.VQP	VQP: Chronosphere Test Failed
+CRONTEST.VQA	Chronosphere Test OK
+CRONTEST.VQP	VQP: Chronosphere Test OK
+CRUS226M.AUD	Crush
+CSTRIKE.PKT	INIF: Counterstrike multiplayer map file names
+CTNK.SHP	UNIT: Chrono tank
+CTNKICON.SHP	ICON: Chrono tank
+CYCL.SHP	MISC: Chain link fence
+D01.SNO	Road
+D01.TEM	Road
+D02.SNO	Road
+D02.TEM	Road
+D03.SNO	Road
+D03.TEM	Road
+D04.SNO	Road
+D04.TEM	Road
+D05.SNO	Road
+D05.TEM	Road
+D06.SNO	Road
+D06.TEM	Road
+D07.SNO	Road
+D07.TEM	Road
+D08.SNO	Road
+D08.TEM	Road
+D09.SNO	Road
+D09.TEM	Road
+D10.SNO	Road
+D10.TEM	Road
+D11.SNO	Road
+D11.TEM	Road
+D12.SNO	Road
+D12.TEM	Road
+D13.SNO	Road
+D13.TEM	Road
+D14.SNO	Road
+D14.TEM	Road
+D15.SNO	Road
+D15.TEM	Road
+D16.SNO	Road
+D16.TEM	Road
+D17.SNO	Road
+D17.TEM	Road
+D18.SNO	Road
+D18.TEM	Road
+D19.SNO	Road
+D19.TEM	Road
+D20.SNO	Road
+D20.TEM	Road
+D21.SNO	Road
+D21.TEM	Road
+D22.SNO	Road
+D22.TEM	Road
+D23.SNO	Road
+D23.TEM	Road
+D24.SNO	Road
+D24.TEM	Road
+D25.SNO	Road
+D25.TEM	Road
+D26.SNO	Road
+D26.TEM	Road
+D27.SNO	Road
+D27.TEM	Road
+D28.SNO	Road
+D28.TEM	Road
+D29.SNO	Road
+D29.TEM	Road
+D30.SNO	Road
+D30.TEM	Road
+D31.SNO	Road
+D31.TEM	Road
+D32.SNO	Road
+D32.TEM	Road
+D33.SNO	Road
+D33.TEM	Road
+D34.SNO	Road
+D34.TEM	Road
+D35.SNO	Road
+D35.TEM	Road
+D36.SNO	Road
+D36.TEM	Road
+D37.SNO	Road
+D37.TEM	Road
+D38.SNO	Road
+D38.TEM	Road
+D39.SNO	Road
+D39.TEM	Road
+D40.SNO	Road
+D40.TEM	Road
+D41.SNO	Road
+D41.TEM	Road
+D42.SNO	Road
+D42.TEM	Road
+D43.SNO	Road
+D43.TEM	Road
+D44.SNO	Road
+D44.TEM	Road
+D45.SNO	Road
+D45.TEM	Road
+DCHI0040.PCX	PICT: Allied Destroyers
+DCLO0040.CPS	PICT: Allied Destroyers
+DD.SHP	UNIT: Destroyer
+DD-BKGND.SHP	MISC: Backgrounds
+DD-BOTM.SHP	MISC: Bottom Edge
+DD-CRNR.SHP	MISC: Corners
+DD-EDGE.SHP	MISC: Left/Right Edges
+DDICON.SHP	ICON: Destroyer
+DD-LEFT.SHP	MISC: Left Edge
+DD-RIGHT.SHP	MISC: Right Edge
+DD-TOP.SHP	MISC: Top Edge
+DEBUG.ENG	MISC: Debugging strings
+DEDMAN1.AUD	Man die #1
+DEDMAN10.AUD	Man die #9
+DEDMAN2.AUD	Man die #2
+DEDMAN3.AUD	Man die #3
+DEDMAN4.AUD	Man die #4
+DEDMAN5.AUD	Man die #5
+DEDMAN6.AUD	Man die #6
+DEDMAN7.AUD	Man die #7
+DEDMAN8.AUD	Man die #8
+DELPHI.SHP	UNIT: Delphi
+DEMOPIC.PCX	PICT: Buy Red Alert Now
+DENSE_R.AUD	Dense
+DESTROYR.VQA	Allied Destroyers
+DESTROYR.VQP	VQP: Allied Destroyers
+DEVIATOR.SHP	CRAT: Air strike
+DOG.SHP	UNIT: Attack dog
+DOGBULLT.SHP	UNIT: Attack dog jumping
+DOGG5P.AUD	Dog angry
+DOGICON.SHP	ICON: Attack dog
+DOGW3PX.AUD	Dog angry #2
+DOGW5.AUD	Dog suffering
+DOGW6.AUD	Dog die
+DOGW7.AUD	Dog wouf #2
+DOGY1.AUD	Dog wouf
+DOLLAR.SHP	CRAT: Money
+DOME.SHP	BLDG: Radar dome
+DOMEICON.SHP	ICON: Radar dome
+DOMEMAKE.SHP	MAKE: Radar dome
+DOMFICON.SHP	ICON: Radar dome fake
+DOUBLE.VQA	2 Construction Yards
+DOUBLE.VQP	VQP: 2 Construction Yards
+DPTHCHRG.VQA	Boat Blows Up Sub
+DPTHCHRG.VQP	VQP: Boat Blows Up Sub
+DRAGON.SHP	MISC: Missile
+DRILL7.AUD	AUDF:
+DRILL9.AUD	AUDF:
+DRILMOV3.AUD	AUDF:
+DRILMOV4.AUD	AUDF:
+DTRK.SHP	UNIT: Demo truck
+DTRKICON.SHP	ICON: Demo truck
+DUD.VQA	Dud Missile In London
+DUD.VQP	VQP: Dud Missile In London
+E1.SHP	UNIT: Minigunner
+E1ICON.SHP	ICON: Rifle Infantry
+E2.SHP	UNIT: Grenadier
+E2ICON.SHP	ICON: Grenadier
+E3.SHP	UNIT: Rocket Soldier
+E3ICON.SHP	ICON: Rocket soldier
+E4.SHP	UNIT: Flamethrower
+E4ICON.SHP	ICON: Flamethrower
+E5.SHP	UNIT: Chem Warrior
+E6.SHP	UNIT: Engineer
+E6ICON.SHP	ICON: Engineer
+E7.SHP	UNIT: Tanya
+E7ICON.SHP	ICON: Tanya
+EAFFIRM1.AUD	Engineer: Affirmative!
+EARTH.SHP	CRAT: Reveal Map
+EBTN-DN.SHP	BUTT: Down
+EBTN-UP.SHP	BUTT: Up
+ED_SIZES.SHP	MISC: Map sizes
+EDBTN_C.SHP	BUTT: Temperate Default terrain
+EDBTN_CG.SHP	BUTT: Temperate Gems
+EDBTN_CM.SHP	BUTT: Temperate Ore
+EDBTN_CW.SHP	BUTT: Temperate Water
+EDBTN_FF.SHP	BUTT: Forward
+EDBTN_LT.SHP	BUTT: Left arrow
+EDBTN_MX.SHP	BUTT: View all tiles
+EDBTN_RR.SHP	BUTT: Backward
+EDBTN_RT.SHP	BUTT: Right arrow
+EDBTN_S.SHP	BUTT: Snow Default terrain
+EDBTN_SG.SHP	BUTT: Snow Gems
+EDBTN_SM.SHP	BUTT: Snow Ore
+EDBTN_SP.SHP	BUTT: Flags
+EDBTN_SW.SHP	BUTT: Snow Water
+EDHI.MIX	EDHI.MIX
+EDITFNT.FNT	FNT:
+EDITOR.ENG	MISC: English editor strings
+EDITOR.FRE	MISC: French editor strings
+EDITOR.GER	MISC: German editor strings
+EDITOR.MIX	RMIX: EDITOR.MIX
+EDLO.MIX	EDLO.MIX
+EDMOUSE.SHP	CURS: Editor Mouse Cursors
+EDTITLE.CPS	PICT: Red Alert Map editor title screen
+EDTITLEF.CPS	PICT: Red Alert Map editor title screen french
+EDTITLEG.CPS	PICT: Red Alert Map editor title screen german
+EENGIN1.AUD	Engineer: Engineering
+EGOPAL.PAL	PAL: ???
+EINAH1.AUD	Einstein: Ah!
+EINOK1.AUD	Einstein: Incredible
+EINSTEIN.SHP	UNIT: Einstein
+EINYES1.AUD	Einstein: Yes
+ELECTDOG.SHP	MISC: Attack dog electro death
+ELECTRO.SNO	MISC: Soldier electro death
+ELECTRO.TEM	MISC: Soldier electro death
+ELEVATOR.VQA	Inside Soviet Elevator
+ELEVATOR.VQP	VQP: Inside Soviet Elevator
+EMOVOUT1.AUD	Engineer: Moving out!
+EMPULSE.SHP	CRAT: Hide Map
+ENG_EDHI.PCX	PICT: Red Alert Map editor title screen
+ENGLISH.VQA	Red Alert Intro Sequence
+ENGLISH.VQP	VQP: Red Alert Intro Sequence
+ENMYAPP1.AUD	enemy approaching
+ETABS.SHP	MISC: Option bar
+EVA5.AUD	AUDF:
+EVA6.AUD	AUDF:
+EXECUTE.VQA	Spy Being Shot
+EXECUTE.VQP	VQP: Spy Being Shot
+EXISTS1.AUD	AUDF:
+EYESSIR1.AUD	Engineer: Yes Sir!
+F01.SNO	crossing
+F01.TEM	Bridge
+F02.SNO	crossing
+F02.TEM	Bridge
+F03.SNO	crossing
+F03.TEM	Bridge
+F04.SNO	crossing
+F04.TEM	Bridge
+F05.SNO	crossing
+F05.TEM	Bridge
+F06.SNO	crossing
+F06.TEM	Bridge
+FAC1226M.AUD	Face to the enemy 1
+FAC2226M.AUD	Face to the enemy 2
+FACFICON.SHP	ICON: Construction Yard fake
+FACT.SHP	BLDG: Construction Yard
+FACTICON.SHP	ICON: Construction Yard
+FACTMAKE.SHP	MAKE: MCV => Construction Yard
+FALLS1.SNO	Waterfall
+FALLS1.TEM	Waterfall
+FALLS1A.SNO	Waterfall
+FALLS1A.TEM	Waterfall
+FALLS2.SNO	Waterfall
+FALLS2.TEM	Waterfall
+FALLS2A.SNO	Waterfall
+FALLS2A.TEM	Waterfall
+FB1.SHP	MISC: Fireballs
+FB2.SHP	MISC: Fireballs
+FBALL1.SHP	MISC: Large explosion
+FCOM.SHP	BLDG: Forward Command Post
+FENC.SHP	MISC: Barbed Wire
+FENCICON.SHP	ICON: Barbed wire
+FIRE1.SHP	MISC: Medium fire
+FIRE2.SHP	MISC: Medium fire dark
+FIRE3.SHP	MISC: Small fire
+FIRE4.SHP	MISC: Very small fire
+FIREBL3.AUD	Flame sound #1
+FIREPO1.AUD	unit firepower upgraded
+FIRETRT1.AUD	Flame sound #2
+FIX.SHP	BLDG: Service depot
+FIXICON.SHP	ICON: Service depot
+FIXIT1.AUD	Wrench sound
+FIXMAKE.SHP	MAKE: Service depot
+FLAGFLY.SHP	MISC: Flag
+FLAK.SHP	MISC: Small explosion
+FLARE.VQA	flare man
+FLARE.VQP	VQP: flare man
+FLARE1.AUD	signal flare detected
+FLAREE1.AUD	signal flare detected to the east
+FLAREN1.AUD	signal flare detected to the north
+FLARES1.AUD	signal flare detected to the south
+FLAREW1.AUD	signal flare detected to the west
+FLMSPT.SHP	MISC: Oil Pump explosion
+FLOAT_V2.AUD	Floating
+FLOR0001.INT	Green floor
+FLOR0002.INT	Green floor
+FLOR0003.INT	Green floor
+FLOR0004.INT	Green floor
+FLOR0005.INT	Green floor
+FLOR0006.INT	Green floor
+FLOR0007.INT	Green floor
+FOGGER1A.AUD	Fogger
+FORD1.SNO	Fjord
+FORD1.TEM	Fjord
+FORD2.SNO	Fjord
+FORD2.TEM	Fjord
+FPLS.SHP	MISC: Flag Circles
+FPOWER.SHP	CRAT: Unit firepower upgrade
+FRAG1.SHP	MISC: Medium explosion
+FRE_EDHI.PCX	PICT: Red Alert Map editor title screen french
+FRHI0166.PCX	PICT: Frozen Soldier
+FRLO0166.CPS	PICT: Frozen Soldier
+FROZEN.VQA	Frozen Soldier
+FROZEN.VQP	VQP: Frozen Soldier
+FTNK.SHP	UNIT: Flame tank
+FTUR.SHP	BLDG: Flame tower
+FTURICON.SHP	ICON: Flame tower
+FTURMAKE.SHP	MAKE: Flame tower
+GAP.SHP	BLDG: GAP Generator
+GAPICON.SHP	ICON: GAP generator
+GAPMAKE.SHP	MAKE: GAP Generator
+GAUGES.CPS	PICT:
+GEARS.AUD	AUDF:
+GEM01.SNO	MISC: Gemstones #1
+GEM01.TEM	MISC: Gemstones #1
+GEM02.SNO	MISC: Gemstones #2
+GEM02.TEM	MISC: Gemstones #2
+GEM03.SNO	MISC: Gemstones #3
+GEM03.TEM	MISC: Gemstones #3
+GEM04.SNO	MISC: Gemstones #4
+GEM04.TEM	MISC: Gemstones #4
+GENERAL.MIX	GENERAL.MIX
+GER_EDHI.PCX	PICT: Red Alert Map editor title screen german
+GFLR0001.INT	Grey Floor
+GFLR0002.INT	Grey Floor
+GFLR0003.INT	Grey Floor
+GFLR0004.INT	Grey Floor
+GFLR0005.INT	Grey Floor
+GIRLOKAY.AUD	Girl: Ok
+GIRLYEAH.AUD	Girl: Ya?
+GLOOM.AUD	Gloom
+GNRL.SHP	UNIT: Cosygin
+GOLD01.SNO	MISC: Ore #1
+GOLD01.TEM	MISC: Ore #1
+GOLD02.SNO	MISC: Ore #2
+GOLD02.TEM	MISC: Ore #2
+GOLD03.SNO	MISC: Ore #3
+GOLD03.TEM	MISC: Ore #3
+GOLD04.SNO	MISC: Ore #4
+GOLD04.TEM	MISC: Ore #4
+GOTIT1.AUD	Tanya: That's all you got!
+GPSBOX.SHP	CRAT: Gps
+GPSSICON.SHP	ICON: GPS satellite
+GRAD6FNT.FNT	FNT:
+GRENADE1.AUD	Tanya Dart
+GRNDWIRE.AUD	Ground Wire
+GRVESTNE.VQA	Tanya Adams R.I.P.
+GRVESTNE.VQP	VQP: Tanya Adams R.I.P.
+GSTR0001.INT	Grey Floor With Yellow Stripes
+GSTR0002.INT	Grey Floor With Yellow Stripes
+GSTR0003.INT	Grey Floor With Yellow Stripes
+GSTR0004.INT	Grey Floor With Yellow Stripes
+GSTR0005.INT	Grey Floor With Yellow Stripes
+GSTR0006.INT	Grey Floor With Yellow Stripes
+GSTR0007.INT	Grey Floor With Yellow Stripes
+GSTR0008.INT	Grey Floor With Yellow Stripes
+GSTR0009.INT	Grey Floor With Yellow Stripes
+GSTR0010.INT	Grey Floor With Yellow Stripes
+GSTR0011.INT	Grey Floor With Yellow Stripes
+GUN.SHP	BLDG: Gun turret
+GUN11.AUD	Minigunner shot
+GUN13.AUD	Pillbox shot
+GUN27.AUD	Pistol 1
+GUN5.AUD	Pistol 2
+GUNFIRE.SHP	MISC: ???
+GUNICON.SHP	ICON: Turret
+GUNMAKE.SHP	MAKE: Gun turret
+GUYOKAY1.AUD	Guy: Ok
+GUYYEAH1.AUD	Guy: Ya?
+H2O_EXP1.SHP	MISC: Big Shot into water
+H2O_EXP2.SHP	MISC: Medium Shot into water
+H2O_EXP3.SHP	MISC: Small Shot into water
+H2OBOMB2.AUD	Water Explosion
+HARV.SHP	UNIT: Ore Truck
+HARVICON.SHP	ICON: Ore truck
+HBOX.SNO	BLDG: Camo. pillbox
+HBOX.TEM	BLDG: Camo. pillbox
+HBOXICON.SHP	ICON: Camo pillbox
+HBOXMAKE.SNO	MAKE: Camo. pillbox
+HBOXMAKE.TEM	MAKE: Camo. pillbox
+HEAL2.AUD	Medic heal sound
+HELI.SHP	UNIT: Longbow helicopter
+HELIICON.SHP	ICON: Longbow helicopter
+HELL226M.AUD	Hell March
+HELP.FNT	FNT:
+HILL01.TEM	Ant hill
+HIND.SHP	UNIT: Hind
+HINDICON.SHP	ICON: Hind
+HIRES.MIX	RMIX: HIRES.MIX
+HISC1-HR.SHP	MISC: Score Screen Bits
+HISC2-HR.SHP	MISC: Score Screen Bits
+HISCORE1.SHP	MISC: Score Screen Bits
+HISCORE2.SHP	MISC: Score Screen Bits
+HOSP.SHP	BLDG: Hospital
+HOSPMAKE.SHP	MAKE: Hospital
+HPAD.SHP	BLDG: Helipad
+HPADICON.SHP	ICON: Helipad
+HPADMAKE.SHP	MAKE: Helipad
+HYDROD1.AUD	flame turret down
+ICE01.SNO	MISC: Ice Floe
+ICE01.TEM	MISC: Ice Floe
+ICE02.SNO	MISC: Ice Floe
+ICE02.TEM	MISC: Ice Floe
+ICE03.SNO	MISC: Ice Floe
+ICE03.TEM	MISC: Ice Floe
+ICE04.SNO	MISC: Ice Floe
+ICE04.TEM	MISC: Ice Floe
+ICE05.SNO	MISC: Ice Floe
+ICE05.TEM	MISC: Ice Floe
+INFXICON.SHP	ICON: Invulnerability
+INST01.CPS	PICT:
+INST01.WSA	ANIM:
+INST01W.CPS	PICT:
+INST01W.WSA	ANIM:
+INST02.CPS	PICT:
+INST02.WSA	ANIM:
+INST03.CPS	PICT:
+INST03.WSA	ANIM:
+INST04.CPS	PICT:
+INST04.WSA	ANIM:
+INST05.CPS	PICT:
+INST05.WSA	ANIM:
+INST06.CPS	PICT:
+INST06.WSA	ANIM:
+INST07.CPS	PICT:
+INST07.WSA	ANIM:
+INST08.CPS	PICT:
+INST08.WSA	ANIM:
+INST09.CPS	PICT:
+INST09.WSA	ANIM:
+INSTAL1.AUD	AUDF:
+INSTALL.CPS	PICT:
+INSTALL.WSA	ANIM:
+INSTALL2.CPS	PICT:
+INTERIOR.MIX	INTERIOR.MIX
+INTERIOR.PAL	PAL: Interior
+INTRO.AUD	Menu music
+INVUL2.AUD	flame turret up
+INVULBOX.SHP	CRAT: Iron curtain
+INVUN.SHP	CRAT: Heal all units
+IRON.SHP	BLDG: Iron curtain
+IRONCHG1.AUD	iron curtain charging
+IRONCUR9.AUD	Iron curtain sound
+IRONICON.SHP	ICON: Iron curtain
+IRONMAKE.SHP	MAKE: Iron curtain
+IRONRDY1.AUD	iron curtain ready
+JBURN1.AUD	Shok trop burn baby burn
+JCHRGE1.AUD	Shok trop fully charged
+JCRISP1.AUD	Shok trop extra crispy
+JDANCE1.AUD	Shok trop lets dance
+JEEP.SHP	UNIT: Ranger
+JEEPICON.SHP	ICON: Ranger
+JJUICE1.AUD	Shok trop got juice
+JJUMP1.AUD	Shok trop need a jump
+JLIGHT1.AUD	Shok trop lights out
+JPOWER1.AUD	Shok trop power on
+JSHOCK1.AUD	Shok trop shocking
+JYES1.AUD	Shok trop yeesss
+KABOOM1.AUD	Building half destroyed
+KABOOM12.AUD	Explosion
+KABOOM15.AUD	Explosion
+KABOOM22.AUD	Building destroyed
+KABOOM25.AUD	Wall hit
+KABOOM30.AUD	Wall down
+KANE2.AUD	AUDF:
+KEEPEM1.AUD	Tanya: Kiss it byebye
+KENN.SHP	BLDG: Kennel
+KENNICON.SHP	ICON: Kennel
+KENNMAKE.SHP	MAKE: Kennel
+KEYSTROK.AUD	AUDF:
+KOSYFRE1.AUD	kosygin freed
+KOSYRES1.AUD	kosygin rescued
+LAB.PCX	PICT: Time Machine
+LAB-LO.CPS	PICT: Time machine
+LANDING.VQA	Helicopter Landing Outside Soviet Base
+LANDING.VQP	VQP: Helicopter Landing Outside Soviet Base
+LANDSBRG.PCX	PICT: Hitler vanishing
+LANDS-LO.CPS	PICT: Hitler vanishing
+LAR1.SHP	MISC: Ant Egg
+LAR2.SHP	MISC: Ant Eggs
+LAUGH1.AUD	Tanya laugh
+LED.FNT	FNT:
+LEFT16.AUD	AUDF:
+LEFTY1.AUD	Tanya: Give it to me
+LITNING.SHP	MISC: Tesla zaps
+LOAD1.AUD	mission loaded
+LOCAL.MIX	RMIX: LOCAL.MIX
+LOOP-1.CPS	PICT:
+LOOP-1.WSA	ANIM:
+LOOP-1W.CPS	PICT:
+LOOP-1W.WSA	ANIM:
+LOOP-2.CPS	PICT:
+LOOP-2.WSA	ANIM:
+LOOP-4.CPS	PICT:
+LOOP-4.WSA	ANIM:
+LOPOWER1.AUD	low power
+LORES.MIX	RMIX: LORES.MIX
+LROTOR.SHP	MISC: Rotor shadows
+LST.SHP	UNIT: Transport
+LSTICON.SHP	ICON: Transport
+LWAL0001.INT	Brown Walls
+LWAL0002.INT	Brown Walls
+LWAL0003.INT	Brown Walls
+LWAL0004.INT	Brown Walls
+LWAL0005.INT	Brown Walls
+LWAL0006.INT	Brown Walls
+LWAL0007.INT	Brown Walls
+LWAL0008.INT	Brown Walls
+LWAL0009.INT	Brown Walls
+LWAL0010.INT	Brown Walls
+LWAL0011.INT	Brown Walls
+LWAL0012.INT	Brown Walls
+LWAL0013.INT	Brown Walls
+LWAL0014.INT	Brown Walls
+LWAL0015.INT	Brown Walls
+LWAL0016.INT	Brown Walls
+LWAL0017.INT	Brown Walls
+LWAL0018.INT	Brown Walls
+LWAL0019.INT	Brown Walls
+LWAL0020.INT	Brown Walls
+LWAL0021.INT	Brown Walls
+LWAL0022.INT	Brown Walls
+LWAL0023.INT	Brown Walls
+LWAL0024.INT	Brown Walls
+LWAL0025.INT	Brown Walls
+LWAL0026.INT	Brown Walls
+LWAL0027.INT	Brown Walls
+MADCHRG2.AUD	M.A.D. tank charging
+MADEXPLO.AUD	M.A.D. tank detonation
+MAFFIRM1.AUD	Medic: Affirmative!
+MAHI0107.PCX	PICT: Assault On Moscow
+MALO0107.CPS	PICT: Assult On Moscow
+MAP.AUD	Map select music
+MAP.SHP	BUTT: Earth
+MAPWIPE2.AUD	AUDF:
+MAPWIPE5.AUD	AUDF:
+MARCH1.AUD	AUDF:
+MASASSLT.VQA	Assault On Moscow
+MASASSLT.VQP	VQP: Assault On Moscow
+MBOSS1.AUD	Mech: Shore thing boss
+MCV.SHP	UNIT: MCV
+MCV.VQA	MCV Drives Up
+MCV.VQP	VQP: MCV Drives Up
+MCV_LAND.VQA	Helicopter Lands Near MCV
+MCV_LAND.VQP	VQP: Helicopter Lands Near MCV
+MCVBRDGE.VQA	MCV Crossing Bridge
+MCVBRDGE.VQP	VQP: MCV Crossing Bridge
+MCVICON.SHP	ICON: MCV
+MECH.SHP	UNIT: Mechanic
+MECHICON.SHP	ICON: Mechanic
+MEDI.SHP	UNIT: Medic
+MEDIICON.SHP	ICON: Medic
+MERCF1.AUD	mersonary freed
+MERCR1.AUD	mersonary rescued
+METALPLT.SHP	MISC: Metal Plate Background
+MGG.SHP	UNIT: Mobile GAP Generator
+MGGICON.SHP	ICON: Mobile GAP Generator
+MGUN.SHP	MISC: Gunboat Gun
+MGUNINF1.AUD	Rapid shoot
+MHEAR1.AUD	Mech: I hear ya
+MHOTDIG1.AUD	Mech: Hot diggity
+MHOWDY1.AUD	Mech: howdy
+MHQ.SHP	UNIT: Radar jammer
+MHUH1.AUD	Mech: huh
+MIG.SHP	UNIT: MIG
+MIG.VQA	Mig Blows Up APC
+MIG.VQP	VQP: Mig Blows Up APC
+MIG_HI.PCX	PICT: Mig Blows Up APC
+MIG_LO.CPS	PICT: Mig Blows Up APC
+MIGICON.SHP	ICON: MIG attack plane
+MINE.SHP	MISC: Mine
+MINE.SNO	MISC: Ore Mine
+MINE.TEM	MISC: Ore Mine
+MINE1.AUD	Antiman mine
+MINEBLO1.AUD	Antitank Mine
+MINELAY1.AUD	Mine placed
+MINIGUN.SHP	MISC: Muzzle flash
+MINP.SHP	BLDG: AP Mine
+MINPMAKE.SHP	MAKE: AP Mine
+MINV.SHP	BLDG: AT Mine
+MINVMAKE.SHP	MAKE: AT Mine
+MISNLST1.AUD	your mission is a failure
+MISNWON1.AUD	mission accomplished
+MISS.SHP	BLDG: Techcenter
+MISSILE.SHP	MISC: Small rocket
+MISSILE1.AUD	Ground to air missile shot
+MISSILE2.SHP	CRAT: Nuclear strike
+MISSILE6.AUD	Cruiser missile
+MISSILE7.AUD	Air to air missile
+MISSION.INI	INIF: multiplayer map file names
+MISSIONS.PKT	INIF: multiplayer map file names
+MLAFF1.AUD	Mech: hill billy laugh
+MLRS.SHP	UNIT: SSM Launcher
+MLTIPLYR.WSA	ANIM: Multiplayer score screen
+MMOVOUT1.AUD	Medic: Moving out!
+MNLY.SHP	UNIT: Mine layer
+MNLYICON.SHP	ICON: Mine layer
+MONTPASS.VQA	Truck Drives Over Sign
+MONTPASS.VQP	VQP: Truck Drives Over Sign
+MOTOR1.AUD	AUDF:
+MOTOR2.AUD	AUDF:
+MOTOR3.AUD	AUDF:
+MOTOR4.AUD	AUDF:
+MOTOR8.AUD	AUDF:
+MOUSE.SHP	CURS: Mouse Cursors
+MOVEFLSH.INT	Movement Circles
+MOVEFLSH.SNO	MISC: Movement Circles
+MOVEFLSH.TEM	MISC: Movement Circles
+MOVIES1.MIX	MOVIES1.MIX
+MOVIES2.MIX	MOVIES2.MIX
+MOVINGIN.VQA	Troups moving in
+MOVINGIN.VQP	VQP: Troups moving in
+MPLAYER.INI	INIF: Aftermath multiplayer game settings
+MRESPON1.AUD	Medic: Medic reporting
+MRISE1.AUD	Mech: Rise n shine
+MRJ.SHP	UNIT: Radar jammer
+MRJICON.SHP	ICON: Radar jammer
+MSAA.WSA	ANIM: Map of Europe
+MSAB.WSA	ANIM: Map of Europe
+MSAC.WSA	ANIM: Map of Europe
+MSAD.WSA	ANIM: Map of Europe
+MSAE.WSA	ANIM: Map of Europe
+MSAF.WSA	ANIM: Map of Europe
+MSAG.WSA	ANIM: Map of Europe
+MSAH.WSA	ANIM: Map of Europe
+MSAI.WSA	ANIM: Map of Europe
+MSAJ.WSA	ANIM: Map of Europe
+MSAK.WSA	ANIM: Map of Europe
+MSAL.WSA	ANIM: Map of Europe
+MSAM.WSA	ANIM: Map of Europe
+MSAN.WSA	ANIM: Map of Europe
+MSG.CPS	PICT:
+MSLO.SNO	BLDG: Missle silo
+MSLO.TEM	BLDG: Missle silo
+MSLOICON.SHP	ICON: Missle silo
+MSLOMAKE.SNO	MAKE: Missle silo
+MSLOMAKE.TEM	MAKE: Missle silo
+MSSA.WSA	ANIM: Map of Europe
+MSSB.WSA	ANIM: Map of Europe
+MSSC.WSA	ANIM: Map of Europe
+MSSD.WSA	ANIM: Map of Europe
+MSSE.WSA	ANIM: Map of Europe
+MSSF.WSA	ANIM: Map of Europe
+MSSG.WSA	ANIM: Map of Europe
+MSSH.WSA	ANIM: Map of Europe
+MSSI.WSA	ANIM: Map of Europe
+MSSJ.WSA	ANIM: Map of Europe
+MSSK.WSA	ANIM: Map of Europe
+MSSL.WSA	ANIM: Map of Europe
+MSSM.WSA	ANIM: Map of Europe
+MSSN.WSA	ANIM: Map of Europe
+MSUB.SHP	UNIT: Missle sub
+MSUBICON.SHP	ICON: Missle sub
+MTFACTHI.PCX	PICT: Mammoth Tank factory
+MTFACTLO.CPS	PICT: Mammoth tank factory
+MTIMEIN1.AUD	mission timer initialised
+MTLPAGE3.AUD	AUDF:
+MTNKFACT.VQA	Mammoth tank factory
+MTNKFACT.VQP	VQP: Mammoth tank factory
+MUD1A.AUD	Mud
+MWRENCH1.AUD	Mech: I'll get my wrench
+MYEEHAW1.AUD	Mech: yeee ha
+MYES1.AUD	Mech Yes Sir!
+MYESSIR1.AUD	Medic: Yes Sir!
+NAPALM1.SHP	MISC: Small fire
+NAPALM2.SHP	MISC: Medium fire
+NAPALM3.SHP	MISC: Large fire
+NATORADR.SHP	MISC: Allies radar screen
+NAVYLST1.AUD	naval unit lost
+NCHIRES.MIX	RMIX: NCHIRES.MIX
+NEEDLE.PCX	PICT: Tanya Being Interrogated
+NEEDL-LO.CPS	PICT: Tanya Being Interrogated
+NEWOPT1.AUD	new construction options
+NOBUILD1.AUD	unable to build more
+NOCOMP1.AUD	AUDF:
+NODEPLY1.AUD	cannot deploy here
+NOFIND1.AUD	AUDF:
+NOFIND2.AUD	AUDF:
+NOFUNDS1.AUD	insufficent funds
+NOPOWR1.AUD	insufficient power
+NOPROB.R01	Soviet #2 Of course
+NOPROB.R03	Soviet #4 Of course
+NOPROB.V01	Allies #2 Of course
+NOPROB.V03	Allies #4 Of course
+NRADRFRM.SHP	MISC: Allies Radarmap background
+NUKESTOK.VQA	Nuclear Mushroom Cloud
+NUKESTOK.VQP	VQP: Nuclear Mushroom Cloud
+OBJMET1.AUD	objective met
+OBJNMET1.AUD	objective not met
+OBJNRCH1.AUD	objective not reached
+OBJRCH1.AUD	objective reached
+OILDRUM.VQA	Artillery Blows Up Barrels
+OILDRUM.VQP	VQP: Artillery Blows Up Barrels
+ONHOLD1.AUD	on hold
+ONIT1.AUD	Tanya: I'm there!
+ONTHPRWL.VQA	Sub Moving Underwater
+ONTHPRWL.VQP	VQP: Sub Moving Underwater
+OPTERM1.AUD	operation control terminated
+ORCA.SHP	UNIT: Orca
+OVEROUT.R01	Soviet #2 As you wish
+OVEROUT.R03	Soviet #4 As you wish
+OVEROUT.V01	Allies #2 As you wish
+OVEROUT.V03	Allies #4 As you wish
+OVERRUN.VQA	Soldiers Nearly Run Over
+OVERRUN.VQP	VQP: Soldiers Nearly Run Over
+P01.SNO	Debris
+P01.TEM	Debris
+P02.SNO	Debris
+P02.TEM	Debris
+P03.SNO	Debris
+P03.TEM	Debris
+P04.SNO	Debris
+P04.TEM	Debris
+P07.SNO	Debris
+P07.TEM	Debris
+P08.SNO	Debris
+P08.TEM	Debris
+P13.SNO	Debris
+P13.TEM	Debris
+P14.SNO	Debris
+P14.TEM	Debris
+PALETTE.CPS	PICT: Redalert Master palette
+PARABOMB.SHP	MISC: Parabombs
+PARABOX.SHP	CRAT: Parabombs
+PARACH.SHP	MISC: Paratroopers
+PASSABLE.SHP	MISC: PASSABLE
+PATRIOT.SHP	MISC: Missle
+PBMBICON.SHP	ICON: Parabombs
+PBOX.SHP	BLDG: Pillbox
+PBOXICON.SHP	ICON: Pillbox
+PBOXMAKE.SHP	MAKE: Pillbox
+PDOX.SHP	BLDG: Chronosphere
+PDOXICON.SHP	ICON: Chronosphere
+PDOXMAKE.SHP	MAKE: Chronosphere
+PERISCOP.VQA	Sub Firing On Boat
+PERISCOP.VQP	VQP: Sub Firing On Boat
+PIFF.SHP	MISC: Piff
+PIFFPIFF.SHP	MISC: Piffs
+PILLBOX1.AUD	Ranger firing sound
+PINFICON.SHP	ICON: Paratroopers
+PIPS.SHP	MISC: Building messages
+PLACBLDG.AUD	Building placement sound
+POWER.SHP	MISC: Power requirement indicator
+POWERBAR.SHP	MISC: Powerbar
+POWR.SHP	BLDG: Powerplant
+POWRICON.SHP	ICON: Powerplant
+POWRMAKE.SHP	MAKE: Powerplant
+PPAPER.CPS	PICT: Allies paper
+PRIBLDG1.AUD	primary building selected
+PROC.SHP	BLDG: Ore refinery
+PROCICON.SHP	ICON: Ore refinery
+PROCMAKE.SHP	MAKE: Ore refinery
+PROGRES1.AUD	unable to comply
+PROLOG.CPS	PICT: Please stand by
+PROLOG.PCX	PICT: Please Stand By
+PROLOG.VQA	Einstien Eliminating Hitler
+PROLOG.VQP	VQP: Einstien Eliminating Hitler
+PT.SHP	UNIT: Gunboat
+PTICON.SHP	ICON: Gunboat
+PULSE.SHP	MISC: Sonar Pulse
+PULSE1.AUD	sonar pulse available
+PUMPMAKE.SHP	MAKE: C&C MCV To Construction Yard Left Cut
+QTNK.SHP	UNIT: M.A.D. Tank
+QTNKICON.SHP	ICON: M.A.D. tank
+QUEE.SHP	UNIT: Queen Ant
+RA.COL	PAL: Setup Program Palette
+RABEEP1.AUD	Map sound #7
+RADARDN1.AUD	Power down
+RADARFRM.SHP	MISC: Edges
+RADARON2.AUD	Power up
+RADIO2.AUD	Radio 2
+RADRRAID.VQA	Heavy tanks attacking base
+RADRRAID.VQP	VQP: Heavy tanks attacking base
+RAMBO1.AUD	Got A Present For Ya
+RAMBO2.AUD	HAHAHA
+RAMBO3.AUD	Real Tough Guy
+RAMENU1.AUD	Map sound #8
+RAPID.SHP	MISC: Red skull
+RASHAPES.SHP	CURS: Setup Mouse Cursors
+RC01.SNO	River
+RC01.TEM	River
+RC02.SNO	River
+RC02.TEM	River
+RC03.SNO	River
+RC03.TEM	River
+RC04.SNO	River
+RC04.TEM	River
+README1.AUD	AUDF:
+READY.R01	Soviet #2 Ready & Waiting
+READY.R03	Soviet #4 Ready & Waiting
+READY.V01	Allies #2 Ready & Waiting
+READY.V03	Allies #4 Ready & Waiting
+REDINTRO.VQA	Red Alert Intro sequence
+REDINTRO.VQP	VQP: Red Alert Intro sequence
+REGCARD1.AUD	AUDF:
+REINFOR1.AUD	reinforcements have arrived
+REPAIR.SHP	BUTT: Repair
+REPAIR1.AUD	repairing
+REPORT1.R00	Soviet #1 Reporting
+REPORT1.R01	Soviet #2 Reporting
+REPORT1.R02	Soviet #3 Reporting
+REPORT1.R03	Soviet #4 Reporting
+REPORT1.V00	Allies #1 Reporting
+REPORT1.V01	Allies #2 Reporting
+REPORT1.V02	Allies #3 Reporting
+REPORT1.V03	Allies #4 Reporting
+REVVOX1.AUD	AUDF:
+REVVOX2.AUD	AUDF:
+REVVOX3.AUD	AUDF:
+REVVOX4.AUD	AUDF:
+REVVOX5.AUD	AUDF:
+REVVOX6.AUD	AUDF:
+REVVOX7.AUD	AUDF:
+RF01.SNO	Rocks
+RF01.TEM	Rocks
+RF02.SNO	Rocks
+RF02.TEM	Rocks
+RF03.SNO	Rocks
+RF03.TEM	Rocks
+RF04.SNO	Rocks
+RF04.TEM	Rocks
+RF05.SNO	Rocks
+RF05.TEM	Rocks
+RF06.SNO	Rocks
+RF06.TEM	Rocks
+RF07.SNO	Rocks
+RF07.TEM	Rocks
+RF08.SNO	Rocks
+RF08.TEM	Rocks
+RF09.SNO	Rocks
+RF09.TEM	Rocks
+RF10.SNO	Rocks
+RF10.TEM	Rocks
+RF11.SNO	Rocks
+RF11.TEM	Rocks
+RIGHT16.AUD	AUDF:
+RITAWAY.R01	Soviet #2 At once
+RITAWAY.R03	Soviet #4 At once
+RITAWAY.V01	Allies #2 At once
+RITAWAY.V03	Allies #4 At once
+ROGER.R01	Soviet #2 Agreed
+ROGER.R03	Soviet #4 Agreed
+ROGER.V01	Allies #2 Agreed
+ROGER.V03	Allies #4 Agreed
+ROKROLL1.AUD	Tanya: Let's rock!
+ROLLOUT.AUD	Roll Out
+RPT.AUD	Mech Man 2
+RROTOR.SHP	MISC: Rotor shadows
+RULES.INI	INIF: Game Settings
+RUN1226M.AUD	Run for your life
+RUSSIAN.MIX	RUSSIAN.MIX
+RV01.SNO	River
+RV01.TEM	River
+RV02.SNO	River
+RV02.TEM	River
+RV03.SNO	River
+RV03.TEM	River
+RV04.SNO	River
+RV04.TEM	River
+RV05.SNO	River
+RV05.TEM	River
+RV06.SNO	River
+RV06.TEM	River
+RV07.SNO	River
+RV07.TEM	River
+RV08.SNO	River
+RV08.TEM	River
+RV09.SNO	River
+RV09.TEM	River
+RV10.SNO	River
+RV10.TEM	River
+RV11.SNO	River
+RV11.TEM	River
+RV12.SNO	River
+RV12.TEM	River
+RV13.SNO	River
+RV13.TEM	River
+RV14.SNO	River
+RV14.TEM	River
+RV15.SNO	River
+RV15.TEM	River
+S01.SNO	Clifs
+S01.TEM	Clifs
+S02.SNO	Clifs
+S02.TEM	Clifs
+S03.SNO	Clifs
+S03.TEM	Clifs
+S04.SNO	Clifs
+S04.TEM	Clifs
+S05.SNO	Clifs
+S05.TEM	Clifs
+S06.SNO	Clifs
+S06.TEM	Clifs
+S07.SNO	Clifs
+S07.TEM	Clifs
+S08.SNO	Clifs
+S08.TEM	Clifs
+S09.SNO	Clifs
+S09.TEM	Clifs
+S10.SNO	Clifs
+S10.TEM	Clifs
+S11.SNO	Clifs
+S11.TEM	Clifs
+S12.SNO	Clifs
+S12.TEM	Clifs
+S13.SNO	Clifs
+S13.TEM	Clifs
+S14.SNO	Clifs
+S14.TEM	Clifs
+S15.SNO	Clifs
+S15.TEM	Clifs
+S16.SNO	Clifs
+S16.TEM	Clifs
+S17.SNO	Clifs
+S17.TEM	Clifs
+S18.SNO	Clifs
+S18.TEM	Clifs
+S19.SNO	Clifs
+S19.TEM	Clifs
+S20.SNO	Clifs
+S20.TEM	Clifs
+S21.SNO	Clifs
+S21.TEM	Clifs
+S22.SNO	Clifs
+S22.TEM	Clifs
+S23.SNO	Clifs
+S23.TEM	Clifs
+S24.SNO	Clifs
+S24.TEM	Clifs
+S25.SNO	Clifs
+S25.TEM	Clifs
+S26.SNO	Clifs
+S26.TEM	Clifs
+S27.SNO	Clifs
+S27.TEM	Clifs
+S28.SNO	Clifs
+S28.TEM	Clifs
+S29.SNO	Clifs
+S29.TEM	Clifs
+S30.SNO	Clifs
+S30.TEM	Clifs
+S31.SNO	Clifs
+S31.TEM	Clifs
+S32.SNO	Clifs
+S32.TEM	Clifs
+S33.SNO	Clifs
+S33.TEM	Clifs
+S34.SNO	Clifs
+S34.TEM	Clifs
+S35.SNO	Clifs
+S35.TEM	Clifs
+S36.SNO	Clifs
+S36.TEM	Clifs
+S37.SNO	Clifs
+S37.TEM	Clifs
+S38.SNO	Clifs
+S38.TEM	Clifs
+SAFFIRM1.AUD	Thief: Affirmative!
+SAM.SHP	BLDG: Sam site
+SAMFIRE.SHP	MISC: Sam site smoke
+SAMICON.SHP	ICON: Sam site
+SAMMAKE.SHP	MAKE: Sam site
+SANDBAG2.AUD	Barrier over
+SATLNCH1.AUD	gps sattelite launched
+SAVE1.AUD	mission saved
+SBAG.SHP	MISC: Sandbags
+SBAGICON.SHP	ICON: Sandbags
+SC1.SNO	MISC: Scorch Mark
+SC1.TEM	MISC: Scorch Mark
+SC2.SNO	MISC: Scorch Mark
+SC2.TEM	MISC: Scorch Mark
+SC3.SNO	MISC: Scorch Mark
+SC3.TEM	MISC: Scorch Mark
+SC4.SNO	MISC: Scorch Mark
+SC4.TEM	MISC: Scorch Mark
+SC5.SNO	MISC: Scorch Mark
+SC5.TEM	MISC: Scorch Mark
+SC6.SNO	MISC: Scorch Mark
+SC6.TEM	MISC: Scorch Mark
+SCA01EA.INI	INIF: It came from ra! 1
+SCA02EA.INI	INIF: It came from ra! 2
+SCA03EA.INI	INIF: It came from ra! 3
+SCA04EA.INI	INIF: It came from ra! 4
+SCG01EA.INI	INIF: Allied Mission 1
+SCG02EA.INI	INIF: Allied Mission 2
+SCG03EA.INI	INIF: Allied Mission 3
+SCG03EB.INI	INIF: Allied Mission 3b
+SCG04EA.INI	INIF: Allied Mission 4
+SCG05EA.INI	INIF: Allied Mission 5
+SCG05EB.INI	INIF: Allied Mission 5b
+SCG05EC.INI	INIF: Allied Mission 5c
+SCG06EA.INI	INIF: Allied Mission 6
+SCG06EB.INI	INIF: Allied Mission 6b
+SCG07EA.INI	INIF: Allied Mission 7
+SCG08EA.INI	INIF: Allied Mission 8
+SCG08EB.INI	INIF: Allied Mission 8b
+SCG09EA.INI	INIF: Allied Mission 9
+SCG09EB.INI	INIF: Allied Mission 9b
+SCG10EA.INI	INIF: Allied Mission 10
+SCG10EB.INI	INIF: Allied Mission 10b
+SCG11EA.INI	INIF: Allied Mission 11
+SCG11EB.INI	INIF: Allied Mission 11b
+SCG12EA.INI	INIF: Allied Mission 12
+SCG13EA.INI	INIF: Allied Mission 13
+SCG14EA.INI	INIF: Allied Mission 14
+SCG20EA.INI	INIF: Sarin gas 1
+SCG21EA.INI	INIF: Sarin gas 2
+SCG22EA.INI	INIF: Sarin gas 3
+SCG23EA.INI	INIF: Fall of greece 1
+SCG24EA.INI	INIF: Fall of greece 2
+SCG26EA.INI	INIF: Siberian conflict 1
+SCG27EA.INI	INIF: Siberian conflict 2
+SCG28EA.INI	INIF: Siberian conflict 3
+SCM01EA.INI	INIF: Coastal influence
+SCM01EA.INI	INIF: costal influence
+SCM02EA.INI	INIF: Middle mayhem
+SCM02EA.INI	INIF: middle mayhem
+SCM03EA.INI	INIF: Equal opportunity
+SCM03EA.INI	INIF: equal opertunity
+SCM04EA.INI	INIF: Marooned
+SCM04EA.INI	INIF: marooned
+SCM05EA.INI	INIF: Keep off the grass
+SCM05EA.INI	INIF: keep of the grass
+SCM06EA.INI	INIF: Isle of fury
+SCM06EA.INI	INIF: istle of fury
+SCM07EA.INI	INIF: Ivory wastelands
+SCM07EA.INI	INIF: ivory wastelands
+SCM08EA.INI	INIF: Shallow grave
+SCM08EA.INI	INIF: shallow grave
+SCM09EA.INI	INIF: North by northwest
+SCM09EA.INI	INIF: north by northwest
+SCM100EA.INI	INIF: Finger lake
+SCM100EA.INI	INIF: tiger core
+SCM101EA.INI	INIF: Tiger core
+SCM101EA.INI	INIF: terrainspotting
+SCM102EA.INI	INIF: Terrainspotting
+SCM102EA.INI	INIF: glenboig
+SCM103EA.INI	INIF: Glenboig
+SCM103EA.INI	INIF: kabalo
+SCM104EA.INI	INIF: Kabalo
+SCM104EA.INI	INIF: zambezi
+SCM105EA.INI	INIF: Zambezi
+SCM105EA.INI	INIF: so near so far
+SCM106EA.INI	INIF: So near so far
+SCM106EA.INI	INIF: no way out
+SCM107EA.INI	INIF: No way out
+SCM107EA.INI	INIF: tropical storm
+SCM108EA.INI	INIF: Tropical storm
+SCM108EA.INI	INIF: pilgrim fathers 2
+SCM108EA.INI	INIF: pips ice tea
+SCM109EA.INI	INIF: Pilgrim fathers 2
+SCM10EA.INI	INIF: First come first serve
+SCM10EA.INI	INIF: first come first serve
+SCM110EA.INI	INIF: Pip's ice tea
+SCM110EA.INI	INIF: docklands
+SCM111EA.INI	INIF: Docklands
+SCM111EA.INI	INIF: eastern seaboard
+SCM112EA.INI	INIF: Eastern seaboard
+SCM112EA.INI	INIF: hell frozen over
+SCM113EA.INI	INIF: Hell frozen over
+SCM113EA.INI	INIF: 4 corners
+SCM114EA.INI	INIF: 4 corners
+SCM114EA.INI	INIF: antartica
+SCM115EA.INI	INIF: Antarctica
+SCM115EA.INI	INIF: water works
+SCM116EA.INI	INIF: Water works
+SCM116EA.INI	INIF: flood lands
+SCM117EA.INI	INIF: Flood lands
+SCM117EA.INI	INIF: world map
+SCM118EA.INI	INIF: World map
+SCM118EA.INI	INIF: all that glitters
+SCM119EA.INI	INIF: All that glitters...
+SCM119EA.INI	INIF: forest under fire
+SCM11EA.INI	INIF: Island hoppers
+SCM11EA.INI	INIF: island hoppers
+SCM120EA.INI	INIF: Forest under fire
+SCM120EA.INI	INIF: island wars 2
+SCM121EA.INI	INIF: Island wars 2
+SCM121EA.INI	INIF: king of the hills
+SCM122EA.INI	INIF: King of the hills
+SCM122EA.INI	INIF: bullsie
+SCM123EA.INI	INIF: Bullseye
+SCM123EA.INI	INIF: things to come
+SCM124EA.INI	INIF: Things to come
+SCM124EA.INI	INIF: polar panic
+SCM125EA.INI	INIF: Polar panic
+SCM125EA.INI	INIF: barrier to entry
+SCM126EA.INI	INIF: Barrier to entry
+SCM126EA.INI	INIF: tundra trouble
+SCM127EA.INI	INIF: Tundra trouble
+SCM127EA.INI	INIF: disaster central
+SCM128EA.INI	INIF: Disaster central
+SCM128EA.INI	INIF: alaska anarchy
+SCM129EA.INI	INIF: Alaskasha anarchy
+SCM129EA.INI	INIF: lunar battlefield
+SCM12EA.INI	INIF: Raraku
+SCM12EA.INI	INIF: raraku
+SCM130EA.INI	INIF: Lunar battlefield
+SCM13EA.INI	INIF: Central conflict
+SCM13EA.INI	INIF: central conflict
+SCM14EA.INI	INIF: Combat alley
+SCM14EA.INI	INIF: combat ally
+SCM15EA.INI	INIF: Island wars
+SCM15EA.INI	INIF: island wars
+SCM16EA.INI	INIF: Desolation
+SCM16EA.INI	INIF: desloation
+SCM17EA.INI	INIF: No escape
+SCM17EA.INI	INIF: no escape
+SCM18EA.INI	INIF: No man's land
+SCM18EA.INI	INIF: no mans land
+SCM19EA.INI	INIF: Normandy
+SCM19EA.INI	INIF: normandy
+SCM20EA.INI	INIF: Pond skirmish
+SCM20EA.INI	INIF: pond skirmish
+SCM21EA.INI	INIF: Ridge war
+SCM21EA.INI	INIF: ridge war
+SCM22EA.INI	INIF: Path beyond
+SCM22EA.INI	INIF: a path beyond
+SCM23EA.INI	INIF: Dugout isle
+SCM23EA.INI	INIF: dugout isle
+SCM24EA.INI	INIF: Treasure isle
+SCM24EA.INI	INIF: treasure isle
+SCM25EA.INI	INIF: Bavarian blast
+SCM25EA.INI	INIF: bavarian blast
+SCM26EA.INI	INIF: Undiscovered country
+SCM26EA.INI	INIF: undiscovered country
+SCM27EA.INI	INIF: Tournament hills
+SCM27EA.INI	INIF: tournament hills
+SCM28EA.INI	INIF: Sleepy valley
+SCM28EA.INI	INIF: sleepy valley
+SCM29EA.INI	INIF: Indirect fire
+SCM29EA.INI	INIF: indirect fire
+SCM30EA.INI	INIF: Snake river
+SCM30EA.INI	INIF: snake river
+SCM31EA.INI	INIF: Snowy island
+SCM31EA.INI	INIF: snowy island
+SCM32EA.INI	INIF: Frostbit fjord
+SCM32EA.INI	INIF: frostbit fijords
+SCM33EA.INI	INIF: Czech mate
+SCM33EA.INI	INIF: czech mate
+SCM34EA.INI	INIF: Siberian slaughter
+SCM34EA.INI	INIF: siberian slaughter
+SCM35EA.INI	INIF: Brother stalin
+SCM35EA.INI	INIF: brother stalin
+SCM36EA.INI	INIF: C&C
+SCM36EA.INI	INIF: c&c
+SCM37EA.INI	INIF: D Day
+SCM37EA.INI	INIF: D Day
+SCM38EA.INI	INIF: Land ladder
+SCM38EA.INI	INIF: land ladder
+SCM39EA.INI	INIF: Lotsa lakes
+SCM39EA.INI	INIF: lotsa larks
+SCM40EA.INI	INIF: Mylai delta
+SCM40EA.INI	INIF: mylai delta
+SCM41EA.INI	INIF: Oz
+SCM41EA.INI	INIF: oz
+SCM42EA.INI	INIF: Ring of land
+SCM42EA.INI	INIF: ring of land
+SCM43EA.INI	INIF: Star
+SCM43EA.INI	INIF: star
+SCM44EA.INI	INIF: United kingdom
+SCM44EA.INI	INIF: united kingdom
+SCM45EA.INI	INIF: United states
+SCM45EA.INI	INIF: united states
+SCM46EA.INI	INIF: Armour guard
+SCM46EA.INI	INIF: armourgarden
+SCM47EA.INI	INIF: Austrailia
+SCM47EA.INI	INIF: australia
+SCM48EA.INI	INIF: Bearing straits
+SCM48EA.INI	INIF: bearing straits
+SCM49EA.INI	INIF: Blow holes
+SCM49EA.INI	INIF: blow holes
+SCM50EA.INI	INIF: Bonsai
+SCM50EA.INI	INIF: bonsai
+SCM51EA.INI	INIF: Camos canyon
+SCM51EA.INI	INIF: camos canyon
+SCM52EA.INI	INIF: Camos coves
+SCM52EA.INI	INIF: camos coves
+SCM53EA.INI	INIF: Camos crossing
+SCM53EA.INI	INIF: camos crossing
+SCM54EA.INI	INIF: Camos cross
+SCM54EA.INI	INIF: camos cross
+SCM55EA.INI	INIF: Crossroads
+SCM55EA.INI	INIF: canyon river
+SCM56EA.INI	INIF: Canyon river
+SCM56EA.INI	INIF: east coast
+SCM57EA.INI	INIF: East coast
+SCM57EA.INI	INIF: fjords
+SCM58EA.INI	INIF: Fjords
+SCM58EA.INI	INIF: india
+SCM59EA.INI	INIF: India
+SCM59EA.INI	INIF: italy
+SCM60EA.INI	INIF: Italy
+SCM60EA.INI	INIF: natural harbor
+SCM61EA.INI	INIF: Natural harbor
+SCM61EA.INI	INIF: lake divide
+SCM62EA.INI	INIF: Lake divide
+SCM62EA.INI	INIF: lakelands
+SCM63EA.INI	INIF: Lakelands
+SCM63EA.INI	INIF: malibu fields
+SCM64EA.INI	INIF: Malibu fields
+SCM64EA.INI	INIF: marshland
+SCM65EA.INI	INIF: Marshland
+SCM65EA.INI	INIF: the mississippi
+SCM66EA.INI	INIF: The mississippi
+SCM66EA.INI	INIF: normandy landings
+SCM67EA.INI	INIF: Normandy landings
+SCM67EA.INI	INIF: ore wars
+SCM68EA.INI	INIF: Ore wars
+SCM68EA.INI	INIF: ponds
+SCM69EA.INI	INIF: Ponds
+SCM69EA.INI	INIF: putney
+SCM70EA.INI	INIF: Putney
+SCM70EA.INI	INIF: river basin
+SCM71EA.INI	INIF: River basin
+SCM71EA.INI	INIF: river delta
+SCM72EA.INI	INIF: River delta
+SCM72EA.INI	INIF: river islands
+SCM73EA.INI	INIF: River islands
+SCM73EA.INI	INIF: river maze
+SCM74EA.INI	INIF: River maze
+SCM74EA.INI	INIF: rivers
+SCM75EA.INI	INIF: Rivers
+SCM75EA.INI	INIF: scappa flow
+SCM76EA.INI	INIF: Scappa flow
+SCM76EA.INI	INIF: snowball fight
+SCM77EA.INI	INIF: Snowball fight
+SCM77EA.INI	INIF: south america
+SCM78EA.INI	INIF: South america
+SCM78EA.INI	INIF: spring line
+SCM79EA.INI	INIF: Spring line
+SCM79EA.INI	INIF: straighter and narrower
+SCM80EA.INI	INIF: Straighter and narrower
+SCM80EA.INI	INIF: the bay
+SCM81EA.INI	INIF: The bay
+SCM81EA.INI	INIF: the great lakes
+SCM82EA.INI	INIF: The great lakes
+SCM82EA.INI	INIF: the linked lands
+SCM83EA.INI	INIF: The linked lands
+SCM83EA.INI	INIF: the valley
+SCM84EA.INI	INIF: The valley
+SCM84EA.INI	INIF: to the core
+SCM85EA.INI	INIF: To the core
+SCM85EA.INI	INIF: volcano
+SCM86EA.INI	INIF: Volcano
+SCM86EA.INI	INIF: wastelands
+SCM87EA.INI	INIF: Wastelands
+SCM87EA.INI	INIF: apres peace
+SCM88EA.INI	INIF: Apre's peace
+SCM88EA.INI	INIF: return to zion
+SCM89EA.INI	INIF: Return to zion
+SCM89EA.INI	INIF: africa
+SCM90EA.INI	INIF: Africa
+SCM90EA.INI	INIF: snow wars
+SCM91EA.INI	INIF: Snow wars
+SCM91EA.INI	INIF: the ice arena
+SCM92EA.INI	INIF: The ice arena
+SCM92EA.INI	INIF: the lake district
+SCM93EA.INI	INIF: The lake district
+SCM93EA.INI	INIF: the woods today
+SCM94EA.INI	INIF: The woods today...
+SCM94EA.INI	INIF: be shore
+SCM95EA.INI	INIF: Be Shore
+SCM95EA.INI	INIF: the garden
+SCM96EA.INI	INIF: The garden
+SCM96EA.INI	INIF: devil central arena
+SCM97EA.INI	INIF: Devil central arena
+SCM97EA.INI	INIF: the sticky bit
+SCM98EA.INI	INIF: The sticky bit
+SCM98EA.INI	INIF: run the gauntlet
+SCM99EA.INI	INIF: Run the gauntlet
+SCM99EA.INI	INIF: finger lake
+SCMD0EA.INI	INIF: around the rim
+SCMD1EA.INI	INIF: conflict cove
+SCMD2EA.INI	INIF: elysium
+SCMD3EA.INI	INIF: gettysburg
+SCMD4EA.INI	INIF: glacial valley
+SCMD5EA.INI	INIF: hadyes frosen over
+SCMD6EA.INI	INIF: hastings
+SCMD7EA.INI	INIF: lepizip
+SCMD8EA.INI	INIF: river crossing
+SCMD9EA.INI	INIF: snow garden
+SCME0EA.INI	INIF: stalingrad
+SCME1EA.INI	INIF: the buldge
+SCME2EA.INI	INIF: twin rivers
+SCME3EA.INI	INIF: warlords lake
+SCME4EA.INI	INIF: zama
+SCME5EA.INI	INIF: badajoz
+SCME6EA.INI	INIF: cold front
+SCME7EA.INI	INIF: cold pass
+SCME8EA.INI	INIF: culloden moor
+SCME9EA.INI	INIF: frozen valley
+SCMF0EA.INI	INIF: gold coast
+SCMF1EA.INI	INIF: hells pass
+SCMF2EA.INI	INIF: iceberg
+SCMF3EA.INI	INIF: in the sun
+SCMF4EA.INI	INIF: islands
+SCMF5EA.INI	INIF: kananga
+SCMF6EA.INI	INIF: lanes
+SCMF7EA.INI	INIF: mekong
+SCMF8EA.INI	INIF: middle ground
+SCMF9EA.INI	INIF: on your marks
+SCMG0EA.INI	INIF: puddles
+SCMG1EA.INI	INIF: revenge
+SCMG2EA.INI	INIF: seaside
+SCMG3EA.INI	INIF: shades
+SCMG4EA.INI	INIF: sticks and stones
+SCMG5EA.INI	INIF: switch
+SCMG6EA.INI	INIF: the boyne
+SCMG7EA.INI	INIF: the keyes
+SCMG8EA.INI	INIF: the lakes
+SCMG9EA.INI	INIF: the neck
+SCMH0EA.INI	INIF: a pattern of islands
+SCMH1EA.INI	INIF: ashes to ashes
+SCMH2EA.INI	INIF: baptisim of fire
+SCMH3EA.INI	INIF: big fish small pond
+SCMH4EA.INI	INIF: bridge head
+SCMH5EA.INI	INIF: bridge head
+SCMH6EA.INI	INIF: butterfly bay
+SCMH7EA.INI	INIF: equal shares
+SCMH8EA.INI	INIF: gold rush
+SCMH9EA.INI	INIF: habitat
+SCMI0EA.INI	INIF: ice queen
+SCMI1EA.INI	INIF: ice station
+SCMI2EA.INI	INIF: island platau
+SCMI3EA.INI	INIF: lakeland
+SCMI4EA.INI	INIF: land locked
+SCMI5EA.INI	INIF: meander
+SCMI6EA.INI	INIF: ore garden
+SCMI7EA.INI	INIF: rias
+SCMI8EA.INI	INIF: river rapids
+SCMI9EA.INI	INIF: rorkes drift
+SCMJ0EA.INI	INIF: smugglers cove
+SCMJ1EA.INI	INIF: strathearn valley
+SCMJ2EA.INI	INIF: the cauldren
+SCMJ3EA.INI	INIF: the finger
+SCMJ4EA.INI	INIF: the web
+SCMJ5EA.INI	INIF: to the core
+SCMJ6EA.INI	INIF: trafalger
+SCMJ7EA.INI	INIF: umboto gorge
+SCMJ8EA.INI	INIF: waterfalls
+SCMJ9EA.INI	INIF: waterloo revisited
+SCMK0EA.INI	INIF: arena valley
+SCMK1EA.INI	INIF: arctic wasteland
+SCMK2EA.INI	INIF: booby traps
+SCMK3EA.INI	INIF: central conflict
+SCMK4EA.INI	INIF: circles of death
+SCMK5EA.INI	INIF: combat zones
+SCMK6EA.INI	INIF: damnation alley
+SCMK7EA.INI	INIF: death valley
+SCMK8EA.INI	INIF: deep six
+SCMK9EA.INI	INIF: destruction derby
+SCML0EA.INI	INIF: diamonds arnt forever
+SCML1EA.INI	INIF: frostbitten
+SCML2EA.INI	INIF: hamburger hill
+SCML3EA.INI	INIF: holy grounds
+SCML4EA.INI	INIF: innocents
+SCML5EA.INI	INIF: island wars
+SCML6EA.INI	INIF: king of the hills
+SCML7EA.INI	INIF: naval conquests
+SCML8EA.INI	INIF: open warfare
+SCML9EA.INI	INIF: potholes
+SCMM0EA.INI	INIF: random violence
+SCMM1EA.INI	INIF: river rampage
+SCMM2EA.INI	INIF: rivers wild
+SCMM3EA.INI	INIF: super bridgehead
+SCMM4EA.INI	INIF: super mekong
+SCMM5EA.INI	INIF: super ore garden
+SCMM6EA.INI	INIF: the berg
+SCMM7EA.INI	INIF: the hills have eyes
+SCMM8EA.INI	INIF: watch your step
+SCMM9EA.INI	INIF: water werks
+SCOLD1.AUD	AUDF:
+SCOLDY1.AUD	Map sound #9
+SCOMND1.AUD	Spy: Commander?
+SCORE.AUD	Mission Accomplished Tune
+SCOREFNT.FNT	FNT:
+SCORES.MIX	SCORES.MIX
+SCRATE.SHP	MISC: Steel crate
+SCU01EA.INI	INIF: Soviet Mission 1
+SCU02EA.INI	INIF: Soviet Mission 2
+SCU02EB.INI	INIF: Soviet Mission 2b
+SCU03EA.INI	INIF: Soviet Mission 3
+SCU04EA.INI	INIF: Soviet Mission 4
+SCU04EB.INI	INIF: Soviet Mission 4b
+SCU05EA.INI	INIF: Soviet Mission 5
+SCU06EA.INI	INIF: Soviet Mission 6
+SCU06EB.INI	INIF: Soviet Mission 6b
+SCU07EA.INI	INIF: Soviet Mission 7
+SCU08EA.INI	INIF: Soviet Mission 8
+SCU08EB.INI	INIF: Soviet Mission 8b
+SCU09EA.INI	INIF: Soviet Mission 9
+SCU10EA.INI	INIF: Soviet Mission 10
+SCU11EA.INI	INIF: Soviet Mission 11
+SCU11EB.INI	INIF: Soviet Mission 11b
+SCU12EA.INI	INIF: Soviet Mission 12
+SCU13EA.INI	INIF: Soviet Mission 13
+SCU13EB.INI	INIF: Soviet Mission 13b
+SCU14EA.INI	INIF: Soviet Mission 14
+SCU31EA.INI	INIF: Proving grounds
+SCU32EA.INI	INIF: Beseiged
+SCU33EA.INI	INIF: Mousetrap
+SCU34EA.INI	INIF: Legacy of tesla
+SCU35EA.INI	INIF: Sov. sold'r vol. & chit.
+SCU36EA.INI	INIF: Top o' the world
+SCU37EA.INI	INIF: Paradox equation
+SCU38EA.INI	INIF: Nulcear escalation
+SEARCH.AUD	Search
+SEARCH.VQA	Intruders Detceted
+SEARCH.VQP	VQP: Intruders Detceted
+SELDRV1.AUD	AUDF:
+SELECT.SHP	MISC: Repairing
+SELL.SHP	BUTT: Sell
+SETUP.DIP	MISC: Setup Program Strings
+SFROZEN.VQA	Frozen Soviet Soldier
+SFROZEN.VQP	VQP: Frozen Soviet Soldier
+SFX4.AUD	AUDF:
+SFXBED2.AUD	AUDF:
+SH01.SNO	Coast
+SH01.TEM	Coast
+SH02.SNO	Coast
+SH02.TEM	Coast
+SH03.SNO	Coast
+SH03.TEM	Coast
+SH04.SNO	Coast
+SH04.TEM	Coast
+SH05.SNO	Coast
+SH05.TEM	Coast
+SH06.SNO	Coast
+SH06.TEM	Coast
+SH07.SNO	Coast
+SH07.TEM	Coast
+SH08.SNO	Coast
+SH08.TEM	Coast
+SH09.SNO	Coast
+SH09.TEM	Coast
+SH10.SNO	Coast
+SH10.TEM	Coast
+SH11.SNO	Coast
+SH11.TEM	Coast
+SH12.SNO	Coast
+SH12.TEM	Coast
+SH13.SNO	Coast
+SH13.TEM	Coast
+SH14.SNO	Coast
+SH14.TEM	Coast
+SH15.SNO	Coast
+SH15.TEM	Coast
+SH16.SNO	Coast
+SH16.TEM	Coast
+SH17.SNO	Coast
+SH17.TEM	Coast
+SH18.SNO	Coast
+SH18.TEM	Coast
+SH19.SNO	Coast
+SH19.TEM	Coast
+SH20.SNO	Coast
+SH20.TEM	Coast
+SH21.SNO	Coast
+SH21.TEM	Coast
+SH22.SNO	Coast
+SH22.TEM	Coast
+SH23.SNO	Coast
+SH23.TEM	Coast
+SH24.SNO	Coast
+SH24.TEM	Coast
+SH25.SNO	Coast
+SH25.TEM	Coast
+SH26.SNO	Coast
+SH26.TEM	Coast
+SH27.SNO	Coast
+SH27.TEM	Coast
+SH28.SNO	Coast
+SH28.TEM	Coast
+SH29.SNO	Coast
+SH29.TEM	Coast
+SH30.SNO	Coast
+SH30.TEM	Coast
+SH31.SNO	Coast
+SH31.TEM	Coast
+SH32.SNO	Coast
+SH32.TEM	Coast
+SH33.SNO	Coast
+SH33.TEM	Coast
+SH34.SNO	Coast
+SH34.TEM	Coast
+SH35.SNO	Coast
+SH35.TEM	Coast
+SH36.SNO	Coast
+SH36.TEM	Coast
+SH37.SNO	Coast
+SH37.TEM	Coast
+SH38.SNO	Coast
+SH38.TEM	Coast
+SH39.SNO	Coast
+SH39.TEM	Coast
+SH40.SNO	Coast
+SH40.TEM	Coast
+SH41.SNO	Coast
+SH41.TEM	Coast
+SH42.SNO	Coast
+SH42.TEM	Coast
+SH43.SNO	Coast
+SH43.TEM	Coast
+SH44.SNO	Coast
+SH44.TEM	Coast
+SH45.SNO	Coast
+SH45.TEM	Coast
+SH46.SNO	Coast
+SH46.TEM	Coast
+SH47.SNO	Coast
+SH47.TEM	Coast
+SH48.SNO	Coast
+SH48.TEM	Coast
+SH49.SNO	Coast
+SH49.TEM	Coast
+SH50.SNO	Coast
+SH50.TEM	Coast
+SH51.SNO	Coast
+SH51.TEM	Coast
+SH52.SNO	Coast
+SH52.TEM	Coast
+SH53.SNO	Coast
+SH53.TEM	Coast
+SH54.SNO	Coast
+SH54.TEM	Coast
+SH55.SNO	Coast
+SH55.TEM	Coast
+SH56.SNO	Coast
+SH56.TEM	Coast
+SHADOW.SHP	MISC: Map shadows
+SHIPSINK.VQA	Ship Sinking
+SHIPSINK.VQP	VQP: Ship Sinking
+SHIPYARD.VQA	Ship Sinking
+SHIPYARD.VQP	VQP: Ship Sinking
+SHKTROP1.AUD	shock troop
+SHOK.SHP	UNIT: Shock trooper
+SHOKICON.SHP	ICON: Shock trooper
+SHORBOM1.VQA	Ships Attatking Base
+SHORBOM1.VQP	VQP: Ships Attatking Base
+SHORBOM2.VQA	Ships Attatking Base Again
+SHORBOM2.VQP	VQP: Ships Attatking Base Again
+SHORBOMB.VQA	Ships Attatking Another Base
+SHORBOMB.VQP	VQP: Ships Attatking Another Base
+SHUT_IT.AUD	Shut_It
+SIDE1NA.SHP	MISC: Allies Radarmap background
+SIDE1US.SHP	MISC: Soviet Radarmap background
+SIDE2NA.SHP	MISC: Allies sidebar #1
+SIDE2US.SHP	MISC: Soviet sidebar #1
+SIDE3NA.SHP	MISC: Allies sidebar #2
+SIDE3US.SHP	MISC: Soviet sidebar #2
+SIDEBAR.SHP	MISC: Sidebar
+SILENCER.AUD	Tanya silenced shoot
+SILO.SHP	BLDG: Ore silo
+SILOICON.SHP	ICON: Silo
+SILOMAKE.SHP	MAKE: Ore Silo
+SILOND1.AUD	silos needed
+SINDEED1.AUD	Spy: Indeed
+SITDUCK.VQA	Ship Blowing Up
+SITDUCK.VQP	VQP: Ship Blowing Up
+SKING1.AUD	Spy: For king and country
+SLCTTGT1.AUD	select target
+SLNTSRVC.VQA	Sub On Sea Bed
+SLNTSRVC.VQP	VQP: Sub On Sea Bed
+SMIG.SHP	UNIT: Spyplane
+SMIGICON.SHP	ICON: Spy Plane
+SMOKE_M.SHP	MISC: Vehicle Smoke
+SMOKEY.SHP	MISC: Smoke cloud
+SMOKLAND.SHP	MISC: Flare
+SMOUT1.AUD	Thief: Moving out!
+SMSH226M.AUD	Smash
+SNAKE.AUD	Snake
+SNDINIT1.AUD	AUDF:
+SNDTST.WSA	ANIM:
+SNOW.MIX	SNOW.MIX
+SNOW.PAL	PAL: Snow
+SNOWBASE.VQA	Base Being Blown Up In The Snow
+SNOWBASE.VQP	VQP: Base Being Blown Up In The Snow
+SNOWBOMB.VQA	Base Being Blown Up In The Snow
+SNOWBOMB.VQP	VQP: Base Being Blown Up In The Snow
+SNSTRAFE.VQA	Planes Strafing Vilage
+SNSTRAFE.VQP	VQP: Planes Strafing Vilage
+SOKAY1.AUD	Thief: Ok!
+SONARBOX.SHP	CRAT: Sonar Pulse
+SONPULSE.AUD	Sonar Pulse
+SONRICON.SHP	ICON: Sonar pulse
+SONWAY1.AUD	Spy: On my way
+SOUNDS.MIX	SOUNDS.MIX
+SOV2.PCX	PICT: Guard
+SOV2-LO.CPS	PICT: Guard
+SOVBACKH.PCX	PICT: Soviet score screen picture
+SOVBASE.VQA	Soviet base with teslas truck drives in
+SOVBASE.VQP	VQP: Soviet base with teslas truck drives in
+SOVBATL.VQA	Destroyed Soviet Vechicles
+SOVBATL.VQP	VQP: Destroyed Soviet Vechicles
+SOVCEMET.VQA	Graveyard
+SOVCEMET.VQP	VQP: Graveyard
+SOVEFAL1.AUD	soviet empire has fallen
+SOVEMP1.AUD	soviet empire selected
+SOVFAPP1.AUD	soviet forces approaching
+SOVFINAL.VQA	Stalin In London
+SOVFINAL.VQP	VQP: Stalin In London
+SOVFORC1.AUD	soviet forces have fallen
+SOVIET1.VQA	Kill The Civillians
+SOVIET1.VQP	VQP: Kill The Civillians
+SOVIET10.VQA	Keep The Convoy Safe
+SOVIET10.VQP	VQP: Keep The Convoy Safe
+SOVIET11.VQA	Cut Off The Boats
+SOVIET11.VQP	VQP: Cut Off The Boats
+SOVIET12.VQA	Capture The Chronosphere
+SOVIET12.VQP	VQP: Capture The Chronosphere
+SOVIET13.VQA	Do Not Loose The Chronosphere
+SOVIET13.VQP	VQP: Do Not Loose The Chronosphere
+SOVIET14.VQA	Final Assult On London
+SOVIET14.VQP	VQP: Final Assult On London
+SOVIET2.VQA	Guard The Base
+SOVIET2.VQP	VQP: Guard The Base
+SOVIET3.VQA	Kill The Spy
+SOVIET3.VQP	VQP: Kill The Spy
+SOVIET4.VQA	Cut The Communications
+SOVIET4.VQP	VQP: Cut The Communications
+SOVIET5.VQA	Capture Communications Centre
+SOVIET5.VQP	VQP: Capture Communications Centre
+SOVIET6.VQA	Guard The Convoy
+SOVIET6.VQP	VQP: Guard The Convoy
+SOVIET7.VQA	Infiltrate The Reactor
+SOVIET7.VQP	VQP: Infiltrate The Reactor
+SOVIET8.VQA	Capture The Island
+SOVIET8.VQP	VQP: Capture The Island
+SOVIET9.VQA	Reclaim The Truck
+SOVIET9.VQP	VQP: Reclaim The Truck
+SOVMCV.VQA	Soviet MCV Drives Up
+SOVMCV.VQP	VQP: Soviet MCV Drives Up
+SOVPAPER.CPS	PICT: Soviet logo
+SOVPAPER.PCX	PICT: Soviet logo
+SOVREIN1.AUD	soviet reinforcements have arived
+SOV-TRAN.WSA	ANIM: Soviet score Screen
+SOVTSTAR.VQA	Soviets Logo
+SOVTSTAR.VQP	VQP: Soviets Logo
+SPARKS1.AUD	AUDF:
+SPEECH.MIX	RMIX: SPEECH.MIX
+SPEED.SHP	CRAT: Unit speed upgrade
+SPEFICON.SHP	ICON: Sub pen fake
+SPEN.SHP	BLDG: Sub pen
+SPENICON.SHP	ICON: Sub pen
+SPENMAKE.SHP	MAKE: Sub pen
+SPLASH9.AUD	Missile in water
+SPOTTER.VQA	Soldiers Being Viewed Through Binoculars
+SPOTTER.VQP	VQP: Soldiers Being Viewed Through Binoculars
+SPUTDOOR.SHP	MISC: GPS Satellite Launching
+SPUTNIK.SHP	MISC: GPS Satellite flying
+SPY.PCX	PICT: Spy Infiltrating Building
+SPY.SHP	UNIT: Spy
+SPY.VQA	Spy Infiltrating Building
+SPY.VQP	VQP: Spy Infiltrating Building
+SPYICON.SHP	ICON: Spy
+SPY-LO.CPS	PICT: Spy Infiltrating Building
+SPYPLN1.AUD	spyplane ready
+SQUISHY2.AUD	Man being squashed
+SS.SHP	UNIT: Submarine
+SSAM.SHP	MISC: Destroyer Turret
+SSICON.SHP	ICON: Submarine
+STALIN.PCX	PICT: Stalin
+STALN-LO.CPS	PICT: Stalin
+STANDBY1.AUD	AUDF:
+STAVCMDR.AUD	Stavros: Commander?
+STAVCRSE.AUD	Stavros: Of course!
+STAVMOV.AUD	Stavros: Move out!
+STAVYES.AUD	Stavros: Yes
+STEALTH2.SHP	CRAT: Stealth
+STEK.SHP	BLDG: Soviet Tech center
+STEKICON.SHP	ICON: Techcenter
+STEKMAKE.SHP	MAKE: Soviet Tech center
+STNK.SHP	UNIT: Phase Transport/Stealth Tank
+STNK.SHP	UNIT: Phase transport
+STNKICON.SHP	ICON: Phase transport
+STRAFE.VQA	Strafe Of Tanks
+STRAFE.VQP	VQP: Strafe Of Tanks
+STRCKIL1.AUD	structure destroyed
+STRIP.SHP	ICON: Blank tile
+STRIPDN.SHP	BUTT: Scroll down
+STRIPNA.SHP	MISC: Allies Sidebar background
+STRIPUP.SHP	BUTT: Scroll up
+STRIPUS.SHP	MISC: Soviet Sidebar background
+STRP0001.INT	Green With Yellow Stripe
+STRP0002.INT	Green With Yellow Stripe
+STRP0003.INT	Green With Yellow Stripe
+STRP0004.INT	Green With Yellow Stripe
+STRP0005.INT	Green With Yellow Stripe
+STRP0006.INT	Green With Yellow Stripe
+STRP0007.INT	Green With Yellow Stripe
+STRP0008.INT	Green With Yellow Stripe
+STRP0009.INT	Green With Yellow Stripe
+STRP0010.INT	Green With Yellow Stripe
+STRP0011.INT	Green With Yellow Stripe
+STRUCAP1.AUD	structure captured
+STRUSLD1.AUD	structure sold
+SUBSHOW1.AUD	Sub uncloaking
+SWHAT1.AUD	Thief: What?
+SYEAH1.AUD	Thief: Yeah!
+SYESSIR1.AUD	Spy: Yes Sir!
+SYRD.SHP	BLDG: Naval Yard
+SYRDICON.SHP	ICON: Naval yard
+SYRDMAKE.SHP	MAKE: Naval Yard
+SYRFICON.SHP	ICON: Naval yard fake
+T01.SNO	MISC: Tree #1
+T01.TEM	MISC: Tree #1
+T02.SNO	MISC: Tree #2
+T02.TEM	MISC: Tree #2
+T03.SNO	MISC: Tree #3
+T03.TEM	MISC: Tree #3
+T04.SNO	MISC: Tree #4
+T04.TEM	MISC: Tree #4
+T05.SNO	MISC: Tree #5
+T05.TEM	MISC: Tree #5
+T06.SNO	MISC: Tree #6
+T06.TEM	MISC: Tree #6
+T07.SNO	MISC: Tree #7
+T07.TEM	MISC: Tree #7
+T08.SNO	MISC: Tree #8
+T08.TEM	MISC: Tree #8
+T09.SNO	MISC: Tree #9
+T09.TEM	MISC: Tree #9
+T10.SNO	MISC: Tree #10
+T10.TEM	MISC: Tree #10
+T11.SNO	MISC: Tree #11
+T11.TEM	MISC: Tree #11
+T12.SNO	MISC: Tree #12
+T12.TEM	MISC: Tree #12
+T13.SNO	MISC: Tree #13
+T13.TEM	MISC: Tree #13
+T14.SNO	MISC: Tree #14
+T14.TEM	MISC: Tree #14
+T15.SNO	MISC: Tree #15
+T15.TEM	MISC: Tree #15
+T16.SNO	MISC: Tree #16
+T16.TEM	MISC: Tree #16
+T17.SNO	MISC: Tree #17
+T17.TEM	MISC: Tree #17
+TABS.SHP	MISC: Options bar
+TAKE_OFF.VQA	Helicopter Taking Off
+TAKE_OFF.VQP	VQP: Helicopter Taking Off
+TANDETH1.AUD	Tanya death
+TANK01.AUD	M.A.D. Tank deployed!
+TANK5.AUD	Artillery
+TANK6.AUD	Cruiser 8 Inch cannon
+TANYA1.VQA	Tanya Being Interrogated
+TANYA1.VQP	VQP: Tanya Being Interrogated
+TANYA2.VQA	Tanya Has Been Rescued
+TANYA2.VQP	VQP: Tanya Has Been Rescued
+TANYAF1.AUD	tanya freed
+TANYAR1.AUD	tanya rescued
+TARGFRE1.AUD	target freed
+TARGRES1.AUD	target rescued
+TC01.SNO	MISC: Trees #1
+TC01.TEM	MISC: Trees #1
+TC02.SNO	MISC: Trees #2
+TC02.TEM	MISC: Trees #2
+TC03.SNO	MISC: Trees #3
+TC03.TEM	MISC: Trees #3
+TC04.SNO	MISC: Trees #4
+TC04.TEM	MISC: Trees #4
+TC05.SNO	MISC: Trees #5
+TC05.TEM	MISC: Trees #5
+TEMPERAT.MIX	TEMPERAT.MIX
+TEMPERAT.PAL	PAL: Temperate
+TENT.PCX	PICT: People at table
+TENT.SHP	BLDG: Allied Tent barracks
+TENTICON.SHP	ICON: Barracks
+TENT-LO.CPS	PICT: People at table
+TENTMAKE.SHP	MAKE: Allied Tent barracks
+TERMINAT.AUD	Terminate
+TESLA.VQA	Tesla coil destroying tank
+TESLA.VQP	VQP: Tesla coil destroying tank
+TESLA1.AUD	Tesla shot
+TEXTY1.AUD	AUDF:
+THANKU1.AUD	AUDF:
+THF.SHP	UNIT: Thief
+THFICON.SHP	ICON: Thief
+TIME.SHP	MISC: Score: Red Alert
+TIMEHR.SHP	MISC: Score: Red Alert
+TIMERGO1.AUD	timer started
+TIMERNO1.AUD	timer stopped
+TITLE.CPS	PICT: Red Alert tilescreen
+TITLE.PCX	PICT: Red Alert tilescreen
+TONEY10.AUD	AUDF:
+TONEY10.AUD	AUDF:
+TONEY11.AUD	AUDF:
+TONEY4.AUD	AUDF:
+TONEY4.AUD	AUDF:
+TONEY5.AUD	AUDF:
+TONEY6.AUD	AUDF:
+TONEY7.AUD	AUDF:
+TONEY7.AUD	AUDF:
+TOOFAR.VQA	Bridge Being Blown Up
+TOOFAR.VQP	VQP: Bridge Being Blown Up
+TORPEDO1.AUD	Torpedoes
+TQUAKE.SHP	CRAT: Time Quake
+TR-1TO2.CPS	PICT:
+TR-1TO2.WSA	ANIM:
+TR-1TO2W.CPS	PICT:
+TR-1TO2W.WSA	ANIM:
+TR-1TO4.CPS	PICT:
+TR-1TO4.WSA	ANIM:
+TR-1TO4W.CPS	PICT:
+TR-1TO4W.WSA	ANIM:
+TR-2TO1.CPS	PICT:
+TR-2TO1.WSA	ANIM:
+TR-2TO1W.CPS	PICT:
+TR-2TO1W.WSA	ANIM:
+TR-2TO3.CPS	PICT:
+TR-2TO3.WSA	ANIM:
+TR-3TO2.CPS	PICT:
+TR-3TO2.WSA	ANIM:
+TR-3TO4.CPS	PICT:
+TR-3TO4.WSA	ANIM:
+TR-4TO1.CPS	PICT:
+TR-4TO1.WSA	ANIM:
+TR-4TO1W.CPS	PICT:
+TR-4TO1W.WSA	ANIM:
+TR-4TO5.CPS	PICT:
+TR-4TO5.WSA	ANIM:
+TR-6TO5.CPS	PICT:
+TR-6TO5.WSA	ANIM:
+TRACTION.AUD	Traction
+TRAIN1.AUD	training
+TRAN.SHP	UNIT: Chinook helicopter
+TRANICON.SHP	ICON: Chinook
+TRANS.ICN	Bulding Placement Tiles
+TREN226M.AUD	Trenches
+TRINITY.VQA	Paris Being Nuked
+TRINITY.VQP	VQP: Paris Being Nuked
+TRUK.SHP	UNIT: Convoy Truck
+TRUKICON.SHP	ICON: Supply truck
+TSLA.SHP	BLDG: Tesla coil
+TSLACHG2.AUD	Tesla charge
+TSLAICON.SHP	ICON: Tesla coil
+TSLAMAKE.SHP	MAKE: Tesla coil
+TSTWND.CPS	PICT:
+TTNK.SHP	UNIT: Tesla tank
+TTNKICON.SHP	ICON: Tesla tank
+TUFFGUY1.AUD	Tanya chew on this
+TURR.SHP	MISC: Cruiser Turret
+TURRET1.AUD	Destroyer shot
+TUTORIAL.INI	INIF: Generic text
+TWIN.AUD	Twin
+TWINKLE1.SHP	MISC: ???
+TWINKLE2.SHP	MISC: ???
+TWINKLE3.SHP	MISC: ???
+TWINMIX1.AUD	TwinMix1
+TYPE.FNT	FNT: Type
+U2.SHP	UNIT: Spyplane
+U2ICON.SHP	ICON: Spy Plane
+UGOTIT.R01	Soviet #2 Very Well
+UGOTIT.R03	Soviet #4 Very Well
+UGOTIT.V01	Allies #2 Verry Well
+UGOTIT.V03	Allies #4 Very Well
+UNDER3.AUD	Under3
+UNITFUL1.AUD	unit full
+UNITLST1.AUD	unit lost
+UNITRDY1.AUD	unit ready
+UNITREP1.AUD	unit repaired
+UNITSLD1.AUD	unit sold
+UNITSPD1.AUD	unit speed upgraded
+UPDTOP.CPS	PICT:
+URADRFRM.SHP	MISC: Soviet Radarmap background
+USSRRADR.SHP	MISC: Soviet radar screen
+V01.SNO	BLDG: Church
+V01.TEM	BLDG: Church
+V02.SNO	BLDG: Civilian building #1
+V02.TEM	BLDG: Civilian building #1
+V03.SNO	BLDG: Civilian building #2
+V03.TEM	BLDG: Civilian building #2
+V04.SNO	BLDG: Civilian building #3
+V04.TEM	BLDG: Civilian building #3
+V05.SNO	BLDG: Civilian building #4
+V05.TEM	BLDG: Civilian building #4
+V06.SNO	BLDG: Civilian building #5
+V06.TEM	BLDG: Civilian building #5
+V07.SNO	BLDG: Civilian building #6
+V07.TEM	BLDG: Civilian building #6
+V08.SNO	BLDG: Civilian building #7
+V08.TEM	BLDG: Civilian building #7
+V09.SNO	BLDG: Civilian building #8
+V09.TEM	BLDG: Civilian building #8
+V10.SNO	BLDG: Civilian building #9
+V10.TEM	BLDG: Civilian building #9
+V11.SNO	BLDG: Civilian building #10
+V11.TEM	BLDG: Civilian building #10
+V12.SNO	BLDG: Civilian building #11
+V12.TEM	BLDG: Civilian building #11
+V13.SNO	BLDG: Civilian building #12
+V13.TEM	BLDG: Civilian building #12
+V14.SNO	MISC: Field
+V14.TEM	MISC: Field
+V15.SNO	MISC: Field
+V15.TEM	MISC: Field
+V16.SNO	MISC: Field
+V16.TEM	MISC: Field
+V17.SNO	MISC: Field
+V17.TEM	MISC: Field
+V18.SNO	MISC: Field
+V18.TEM	MISC: Field
+V19.SHP	BLDG: Oil Pump
+V2.SHP	MISC: V2 Rocket
+V2RL.SHP	UNIT: V2 Rocket Launcher
+V2RLICON.SHP	ICON: V2 Rocket launcher
+V2ROCKET.VQA	V2 Rocket launcher Launching
+V2ROCKET.VQP	VQP: V2 Rocket launcher Launching
+VCR.FNT	FNT:
+VECTOR1A.AUD	Vector
+VEH-HIT1.SHP	MISC: Small vechicle explosion
+VEH-HIT2.SHP	MISC: Large vechicle explosion
+VEH-HIT3.SHP	MISC: Very small explosion
+VEHIC1.R00	Soviet #1 Veicle Reporting
+VEHIC1.R02	Soviet #3 Comrad?!
+VEHIC1.V00	Allies #1 Veicle Reporting
+VEHIC1.V02	Allies #3 Veicle Reporting
+VR2.AUD	VR2
+W1.SNO	water
+W1.TEM	Coast
+W2.SNO	water
+W2.TEM	Coast
+WAKE.SHP	MISC: Gunboat wakes
+WALL0001.INT	Blank Tile
+WALL0002.INT	Grey Wall
+WALL0003.INT	Grey Wall
+WALL0004.INT	Grey Wall
+WALL0005.INT	Grey Wall
+WALL0006.INT	Grey Wall
+WALL0007.INT	Grey Wall
+WALL0008.INT	Grey Wall
+WALL0009.INT	Grey Wall
+WALL0010.INT	Grey Wall
+WALL0011.INT	Grey Wall
+WALL0012.INT	Grey Wall
+WALL0013.INT	Grey Wall
+WALL0014.INT	Grey Wall
+WALL0015.INT	Grey Wall
+WALL0016.INT	Grey Wall
+WALL0017.INT	Grey Wall
+WALL0018.INT	Grey Wall
+WALL0019.INT	Grey Wall
+WALL0020.INT	Grey Wall
+WALL0021.INT	Grey Wall
+WALL0022.INT	Grey Wall
+WALL0023.INT	Grey Wall
+WALL0024.INT	Grey Wall
+WALL0025.INT	Grey Wall
+WALL0026.INT	Grey Wall
+WALL0027.INT	Grey Wall
+WALL0028.INT	Grey Wall
+WALL0029.INT	Grey Wall
+WALL0030.INT	Grey Wall
+WALL0031.INT	Grey Wall
+WALL0032.INT	Grey Wall
+WALL0033.INT	Grey Wall
+WALL0034.INT	Grey Wall
+WALL0035.INT	Grey Wall
+WALL0036.INT	Grey Wall
+WALL0037.INT	Grey Wall
+WALL0038.INT	Grey Wall
+WALL0039.INT	Grey Wall
+WALL0040.INT	Grey Wall
+WALL0041.INT	Grey Wall
+WALL0042.INT	Grey Wall
+WALL0043.INT	Grey Wall
+WALL0044.INT	Grey Wall
+WALL0045.INT	Grey Wall
+WALL0046.INT	Grey Wall
+WALL0047.INT	Grey Wall
+WALL0048.INT	Grey Wall
+WALL0049.INT	Grey Wall
+WALLKIL2.AUD	Fence over
+WARPICON.SHP	ICON: Chronoshift
+WASTELND.AUD	Wasteland
+WC01.SNO	Coast
+WC01.TEM	Coast
+WC02.SNO	Coast
+WC02.TEM	Coast
+WC03.SNO	Coast
+WC03.TEM	Coast
+WC04.SNO	Coast
+WC04.TEM	Coast
+WC05.SNO	Coast
+WC05.TEM	Coast
+WC06.SNO	Coast
+WC06.TEM	Coast
+WC07.SNO	Coast
+WC07.TEM	Coast
+WC08.SNO	Coast
+WC08.TEM	Coast
+WC09.SNO	Coast
+WC09.TEM	Coast
+WC10.SNO	Coast
+WC10.TEM	Coast
+WC11.SNO	Coast
+WC11.TEM	Coast
+WC12.SNO	Coast
+WC12.TEM	Coast
+WC13.SNO	Coast
+WC13.TEM	Coast
+WC14.SNO	Coast
+WC14.TEM	Coast
+WC15.SNO	Coast
+WC15.TEM	Coast
+WC16.SNO	Coast
+WC16.TEM	Coast
+WC17.SNO	Coast
+WC17.TEM	Coast
+WC18.SNO	Coast
+WC18.TEM	Coast
+WC19.SNO	Coast
+WC19.TEM	Coast
+WC20.SNO	Coast
+WC20.TEM	Coast
+WC21.SNO	Coast
+WC21.TEM	Coast
+WC22.SNO	Coast
+WC22.TEM	Coast
+WC23.SNO	Coast
+WC23.TEM	Coast
+WC24.SNO	Coast
+WC24.TEM	Coast
+WC25.SNO	Coast
+WC25.TEM	Coast
+WC26.SNO	Coast
+WC26.TEM	Coast
+WC27.SNO	Coast
+WC27.TEM	Coast
+WC28.SNO	Coast
+WC28.TEM	Coast
+WC29.SNO	Coast
+WC29.TEM	Coast
+WC30.SNO	Coast
+WC30.TEM	Coast
+WC31.SNO	Coast
+WC31.TEM	Coast
+WC32.SNO	Coast
+WC32.TEM	Coast
+WC33.SNO	Coast
+WC33.TEM	Coast
+WC34.SNO	Coast
+WC34.TEM	Coast
+WC35.SNO	Coast
+WC35.TEM	Coast
+WC36.SNO	Coast
+WC36.TEM	Coast
+WC37.SNO	Coast
+WC37.TEM	Coast
+WC38.SNO	Coast
+WC38.TEM	Coast
+WCRATE.SHP	MISC: Wood crate
+WEAFICON.SHP	ICON: War factory fake
+WEAP.SHP	BLDG: War factory
+WEAP2.SHP	BLDG: War factory base
+WEAPICON.SHP	ICON: War factory
+WEAPMAKE.SHP	MAKE: War factory
+WELCOME.CPS	PICT:
+WOOD.SHP	MISC: Wood Fence
+WORK226M.AUD	Workmen
+WRITE.CPS	PICT:
+WWCRATE.SHP	MISC: Watercrate
+XPLOPLC1.AUD	explosive charge placed
+XTRA0001.INT	Wall Corners On Grey Floor
+XTRA0002.INT	Wall Corners On Grey Floor
+XTRA0003.INT	Wall Corners On Grey Floor
+XTRA0004.INT	Wall Corners On Grey Floor
+XTRA0005.INT	Wall Corners On Green Floor
+XTRA0006.INT	Wall Corners On Green Floor
+XTRA0007.INT	Wall Corners On Green Floor
+XTRA0008.INT	Wall Corners On Green Floor
+XTRA0009.INT	Wall With Fittings
+XTRA0010.INT	Wall With Fittings
+XTRA0011.INT	Wall With Fittings
+XTRA0012.INT	Computer
+XTRA0013.INT	Computer
+XTRA0014.INT	Generator
+XTRA0015.INT	Equipment
+XTRA0016.INT	nuke sign tile
+YAK.SHP	UNIT: Yak
+YAKICON.SHP	ICON: Yak
+YEAH1.AUD	Tanya: Yeah
+YES1.AUD	Tanya: Yes Sir!
+YESSIR1.R00	Soviet #1 Yes Sir?!
+YESSIR1.R01	Soviet #2 Yes Sir?!
+YESSIR1.R02	Soviet #3 Yes Sir?!
+YESSIR1.R03	Soviet #4 Yes Sir?!
+YESSIR1.V00	Allies #1 Yes sir?!
+YESSIR1.V01	Allies #2 Yes Sir!
+YESSIR1.V02	Allies #3 Yes sir!
+YESSIR1.V03	Allies #4 Yes sir!
+YO1.AUD	Tanya: Whats up?
+SCG40EA.INI	Caught In The Act
+SCG41EA.INI	In The Nick Of Time
+SCG42EA.INI	Production Disruption
+SCG43EA.INI	Harbor Reclamation
+SCG44EA.INI	Time Flies
+SCG45EA.INI	Monster Tank Madness
+SCG46EA.INI	Pawn
+SCG47EA.INI	Negotations
+SCG48EA.INI	Abslout M.A.D.ness
+SCU40EA.INI	Shock Therapy
+SCU41EA.INI	Test Drive
+SCU42EA.INI	Lets Make A Steal
+SCU43EA.INI	Testing Grounds
+SCU44EA.INI	Situation Critical
+SCU45EA.INI	Don't Drink The Water
+SCU46EA.INI	Brothers In Arms
+SCU47EA.INI	Deus Ex Machina
+SCU48EA.INI	Grunyev Revolution

@@ -10,6 +10,21 @@ import (
 
 type gameID int
 
+func (g gameID) String() string {
+	switch g {
+	case gameCC1:
+		return "cc1"
+	case gameRA1:
+		return "ra1"
+	case gameCC2:
+		return "cc2"
+	case gameRA2:
+		return "ra2"
+	default:
+		return ""
+	}
+}
+
 const (
 	gameCC1   gameID = 0
 	gameRA1   gameID = 1
