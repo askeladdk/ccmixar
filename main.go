@@ -9,6 +9,7 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+	"text/tabwriter"
 )
 
 var defaultKeySource = []byte{
@@ -184,14 +185,17 @@ func commandInfo(args []string) error {
 		mix.RecoverLmd()
 		_ = mix.ReadLmd()
 
-		fmt.Printf("checksum:  %t\n", (mix.flags&flagChecksum) != 0)
-		fmt.Printf("encrypted: %t\n", (mix.flags&flagEncrypted) != 0)
-		fmt.Printf("files:     %d\n", len(mix.files))
-		fmt.Printf("size:      %d bytes\n", mix.size)
+		fmt.Printf("checksum   %t\n", (mix.flags&flagChecksum) != 0)
+		fmt.Printf("encrypted  %t\n", (mix.flags&flagEncrypted) != 0)
+		fmt.Printf("files      %d\n", len(mix.files))
+		fmt.Printf("size       %d bytes\n", mix.size)
 
+		tw := tabwriter.NewWriter(os.Stdout, 4, 4, 4, ' ', 0)
+		fmt.Fprintf(tw, "index\tid\toffset\tlength\tname\n")
 		for i, entry := range mix.files {
-			fmt.Printf("%04d - %08X %08X % 12d %s\n", i, entry.id, entry.offset, entry.size, entry.name)
+			fmt.Fprintf(tw, "%04d\t%08X\t%08X\t%d\t%s\n", i, entry.id, entry.offset, entry.size, entry.name)
 		}
+		tw.Flush()
 
 		return nil
 	}
