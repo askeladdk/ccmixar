@@ -47,7 +47,7 @@ func (info *bufferFileInfo) Size() int64 {
 }
 
 func (info *bufferFileInfo) Open() (io.ReadCloser, error) {
-	return ioutil.NopCloser(&info.buffer), nil
+	return io.NopCloser(&info.buffer), nil
 }
 
 func readDirectory(dirname string) ([]fileInfo, error) {
