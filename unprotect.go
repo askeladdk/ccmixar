@@ -60,7 +60,7 @@ func (mix *mixFile) RewriteHeader(w io.Writer) error {
 	writeIndex := func(w io.Writer) error {
 		buf := make([]byte, 6+12*len(mix.files))
 		binary.LittleEndian.PutUint16(buf[0:], uint16(len(mix.files)))
-		binary.LittleEndian.PutUint32(buf[4:], mix.size)
+		binary.LittleEndian.PutUint32(buf[2:], mix.size)
 		for i, file := range mix.files {
 			binary.LittleEndian.PutUint32(buf[6+12*i+0:], file.id)
 			binary.LittleEndian.PutUint32(buf[6+12*i+4:], file.offset)
